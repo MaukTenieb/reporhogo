@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Reporhogo — Korhogo Fauna</title>
+<meta name="description" content="Reporhogo — one topic, forty-one code forges.">
+<meta name="robots" content="index,follow,noai,noimageai">
+<meta name="author" content="Mauk Tenieb">
+<link rel="canonical" href="https://mauktenieb.github.io/reporhogo/">
+<meta property="og:type" content="website"><meta property="og:title" content="Reporhogo"><meta property="og:description" content="One topic, forty-one code forges."><meta property="og:url" content="https://mauktenieb.github.io/reporhogo/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Reporhogo","url":"https://mauktenieb.github.io/reporhogo/","description":"One topic, forty-one code forges: search GitHub, GitLab, Codeberg, SourceHut, Gitee, Radicle and 35 more at once, from a single HTML page.","applicationCategory":"DeveloperApplication","operatingSystem":"Any (web browser)","isAccessibleForFree":true,"license":"https://opensource.org/licenses/MIT","author":{"@type":"Person","name":"Mauk Tenieb","url":"https://mauktenieb.github.io/"},"codeRepository":"https://github.com/MaukTenieb/reporhogo"}</script>
+<link rel="icon" href="favicon.png">
+<link href="fonts.css" rel="stylesheet">
+<!--
+ Reporhogo — code under the MIT License (see LICENSE). The names Reporhogo, Korhogo and Korhogo Fauna, and the marks, remain the property of Mauk Tenieb & Korhogo.
+-->
+<style>
+/* Layout: search bar, tile wall (each tile = one forge, click to focus), focus bar, unified results. */
+:root{
+  --bg:#07060a; --panel:#0f0d12; --fg:#efe6cf; --muted:#9a9078; --line:#2c2720;
+  --accent:#c9a84c; --accent-soft:rgba(201,168,76,.14);
+  --ok:#7fdc8a; --warn:#ffb347; --err:#e5786c; --idle:#5a5448;
+  --display:"DM Mono",ui-monospace,Menlo,monospace;
+  --body:"DM Mono",ui-monospace,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 var(--body);padding:0 16px}
+.wrap{max-width:1100px;margin:0 auto;padding-block:28px 56px;display:flex;flex-direction:column;gap:20px}
+h1{font:400 clamp(34px,7vw,56px)/1 "Bebas Neue",Impact,sans-serif;letter-spacing:.06em;margin:0;color:#b9d84a;text-shadow:0 0 22px rgba(201,168,76,.35)}
+h1 span{color:var(--accent)}
+form{display:flex;gap:8px;flex-wrap:wrap}
+#q{flex:1 1 260px;min-width:0;font:500 18px var(--display);padding:13px 15px;border:2px solid var(--fg);background:var(--panel);color:var(--fg);border-radius:0}
+#q:focus{outline:3px solid var(--accent);outline-offset:2px}
+.btn{font:600 12px var(--display);letter-spacing:.06em;text-transform:uppercase;border:2px solid var(--fg);background:var(--fg);color:var(--bg);padding:0 16px;min-height:50px;cursor:pointer;border-radius:0;text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+.btn.ghost{background:transparent;color:var(--fg);min-height:38px;border-width:1px}
+.btn.ghost:hover{background:var(--fg);color:var(--bg)}
+select{font:500 13px var(--display);border:2px solid var(--fg);background:var(--panel);color:var(--fg);min-height:50px;padding:0 8px;border-radius:0}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.row{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.label{font:600 11px var(--display);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.seg{display:flex;border:1px solid var(--line)}
+.seg button{font:600 11px var(--display);letter-spacing:.06em;text-transform:uppercase;background:var(--panel);color:var(--muted);border:0;padding:7px 11px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--fg);color:var(--bg)}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(132px,1fr));gap:6px}
+.tile{position:relative;display:flex;flex-direction:column;justify-content:space-between;gap:10px;min-height:76px;padding:9px 10px;background:var(--panel);border:1px solid var(--line);cursor:pointer;text-align:left;color:var(--fg);font:inherit;transition:transform .12s,border-color .12s,background .12s}
+.tile:hover{transform:translateY(-2px);border-color:var(--fg)}
+.tile b{font:600 12px/1.2 var(--display)}
+.tile .n{font:800 20px/1 var(--display);font-variant-numeric:tabular-nums}
+.tile .st{font:500 10px var(--display);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.tile::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--idle)}
+.tile[data-s="ok"]::before{background:var(--ok)}
+.tile[data-s="arch"]::before{background:var(--accent)}
+.tile[data-s="err"]::before{background:var(--err)}
+.tile[data-s="run"]::before{background:var(--warn)}
+.tile[data-s="zero"]{opacity:.22}
+.tile[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.tile[hidden]{display:none}
+@media (prefers-reduced-motion:no-preference){.tile[data-s="run"]::before{animation:pulse .8s ease-in-out infinite alternate}}
+@keyframes pulse{to{opacity:.2}}
+.tile[aria-pressed="false"]{opacity:.4;background:transparent}
+.tile[aria-pressed="false"] .n{text-decoration:line-through}
+#out{width:100%;min-height:220px;font:13px/1.6 var(--display);padding:12px;border:2px solid var(--fg);background:var(--panel);color:var(--fg);resize:vertical;border-radius:0;overflow-wrap:anywhere}
+#note{font:500 12px var(--display);color:var(--warn)}
+
+.btn{color:#07060a}.btn.ghost{color:var(--fg)}
+#q::placeholder{color:var(--muted)}
+
+.tile{text-decoration:none}
+.tile[data-s="zero"]{opacity:1;filter:none}
+.tile[data-s="hit"]{border-color:var(--accent);animation:twinkle 1.6s ease-in-out infinite;box-shadow:0 0 0 1px var(--accent),0 0 18px color-mix(in srgb,var(--accent) 45%,transparent)}
+.tile[data-s="hit"] .n{color:var(--accent)}
+.tile[data-s="hit"]::after{content:"✦";position:absolute;right:7px;top:5px;color:var(--accent);text-shadow:0 0 8px var(--accent);animation:spark 1.1s ease-in-out infinite}
+@keyframes twinkle{0%,100%{background:var(--panel)}50%{background:color-mix(in srgb,var(--accent) 18%,var(--panel))}}
+@keyframes spark{0%,100%{opacity:.2;transform:scale(.7) rotate(0)}50%{opacity:1;transform:scale(1.15) rotate(45deg)}}
+@media (prefers-reduced-motion:reduce){.tile[data-s="hit"],.tile[data-s="hit"]::after{animation:none}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <h1>Repo<span>rhogo</span></h1>
+  <form id="f" role="search">
+    <input id="q" type="search" placeholder="Topic…" autocomplete="off" aria-label="Topic">
+    <button class="btn" type="submit">Collect URLs</button>
+  </form>
+  <span id="sum" hidden></span>
+  <div class="tiles" id="tiles"></div>
+  <div class="row"><span class="label" id="osum"></span><button class="btn ghost" type="button" id="copy">Copy</button></div>
+  <span id="note" hidden></span>
+  <textarea id="out" readonly aria-label="Collected URLs" placeholder="Comma-separated URLs appear here."></textarea>
+</div>
+
+<script>
+
+const N=50, enc=encodeURIComponent, web=q=>"https://duckduckgo.com/?q="+enc(q);
+const F=[
+ ["codeberg","Codeberg","gitea","https://codeberg.org",q=>`https://codeberg.org/explore/repos?q=${enc(q)}`,"site:codeberg.org",[/^codeberg\.org$/]],
+ ["forgejo","Forgejo","gitea","https://code.forgejo.org",q=>`https://code.forgejo.org/explore/repos?q=${enc(q)}`,"forgejo",[/forgejo/]],
+ ["gitea","Gitea","gitea","https://gitea.com",q=>`https://gitea.com/explore/repos?q=${enc(q)}`,"site:gitea.com",[/^gitea\.com$/]],
+ ["sourcehut","SourceHut",null,null,q=>`https://sr.ht/projects?search=${enc(q)}`,"site:sr.ht",[/(^|\.)sr\.ht$/]],
+ ["gitlab","GitLab","gitlab","https://gitlab.com",q=>`https://gitlab.com/search?search=${enc(q)}&scope=projects`,"site:gitlab.com",[/^gitlab\.com$/]],
+ ["bitbucket","Bitbucket",null,null,q=>web(q+" site:bitbucket.org"),"site:bitbucket.org",[/bitbucket\.org$/]],
+ ["gerrit","Gerrit",null,null,q=>`https://review.opendev.org/admin/repos/q/filter:${enc(q)}`,"gerrit",[/^(review|gerrit)\.|-review\./]],
+ ["phorge","Phorge",null,null,q=>`https://we.phorge.it/search/query/all/?query=${enc(q)}`,"phorge OR phabricator",[/phorge|phabricator/]],
+ ["pagure","Pagure","pagure","https://pagure.io",q=>`https://pagure.io/projects/*${enc(q)}*`,"site:pagure.io",[/^pagure\.io$/,/^src\.fedoraproject\.org$/]],
+ ["savannah","Savannah",null,null,q=>`https://savannah.gnu.org/search/?type_of_search=soft&words=${enc(q)}`,"site:savannah.gnu.org OR site:savannah.nongnu.org",[/savannah\.(non)?gnu\.org$/]],
+ ["launchpad","Launchpad","launchpad",null,q=>`https://launchpad.net/+search?field.text=${enc(q)}`,"site:launchpad.net",[/launchpad\.net$/]],
+ ["fossil","Fossil",null,null,q=>`https://chiselapp.com/repositories/`,"site:chiselapp.com OR fossil-scm",[/chiselapp\.com$/,/fossil-scm\.org$/]],
+ ["gogs","Gogs","gitea","https://try.gogs.io",q=>`https://try.gogs.io/explore/repos?q=${enc(q)}`,"gogs",[/gogs/]],
+ ["onedev","OneDev",null,null,q=>`https://code.onedev.io/~projects`,"onedev",[/onedev/]],
+ ["radicle","Radicle","radicle",null,q=>`https://app.radicle.xyz/nodes/seed.radicle.garden`,"radicle rad:",[/radicle/]],
+ ["pijul","Pijul Nest",null,null,q=>`https://nest.pijul.com/`,"site:nest.pijul.com",[/nest\.pijul\.com$/]],
+ ["gitbucket","GitBucket",null,null,q=>web(q+" gitbucket"),"\"GitBucket\"",[/gitbucket/]],
+ ["kallithea","Kallithea",null,null,q=>`https://kallithea-scm.org/repos/`,"kallithea",[/kallithea/]],
+ ["allura","Allura",null,null,q=>`https://forge-allura.apache.org/p/`,"allura",[/allura/]],
+ ["heptapod","Heptapod","gitlab","https://foss.heptapod.net",q=>`https://foss.heptapod.net/explore/projects?name=${enc(q)}`,"site:foss.heptapod.net",[/heptapod\.net$/]],
+ ["disroot","Disroot Git","gitea","https://git.disroot.org",q=>`https://git.disroot.org/explore/repos?q=${enc(q)}`,"site:git.disroot.org",[/^git\.disroot\.org$/]],
+ ["tangled","Tangled",null,null,q=>`https://tangled.sh/`,"site:tangled.sh OR site:tangled.org",[/tangled\.(sh|org)$/]],
+ ["gitgud","GitGud","gitlab","https://gitgud.io",q=>`https://gitgud.io/explore/projects?name=${enc(q)}`,"site:gitgud.io",[/^gitgud\.io$/]],
+ ["repoorcz","repo.or.cz",null,null,q=>`https://repo.or.cz/?a=project_list&s=${enc(q)}`,"site:repo.or.cz",[/^repo\.or\.cz$/]],
+ ["gitiles","Gitiles",null,null,q=>`https://cs.opensource.google/search?q=${enc(q)}`,"site:googlesource.com",[/googlesource\.com$/]],
+ ["sourceforge","SourceForge",null,null,q=>`https://sourceforge.net/directory/?q=${enc(q)}`,"site:sourceforge.net",[/sourceforge\.net$/,/\.sf\.net$/]],
+ ["notabug","NotABug","gitea","https://notabug.org",q=>`https://notabug.org/explore/repos?q=${enc(q)}`,"site:notabug.org",[/^notabug\.org$/]],
+ ["framagit","Framagit","gitlab","https://framagit.org",q=>`https://framagit.org/explore/projects?name=${enc(q)}`,"site:framagit.org",[/^framagit\.org$/]],
+ ["gitee","Gitee","gitee",null,q=>`https://search.gitee.com/?type=repository&q=${enc(q)}`,"site:gitee.com",[/gitee\.com$/]],
+ ["gitcode","GitCode",null,null,q=>`https://gitcode.com/search?q=${enc(q)}`,"site:gitcode.com",[/gitcode\.(com|net)$/]],
+ ["coding","CODING",null,null,q=>web(q+" site:coding.net"),"site:coding.net",[/coding\.net$/]],
+ ["atomgit","AtomGit",null,null,q=>`https://atomgit.com/search?q=${enc(q)}`,"site:atomgit.com",[/atomgit\.com$/]],
+ ["gitlink","GitLink",null,null,q=>`https://www.gitlink.org.cn/search?value=${enc(q)}`,"site:gitlink.org.cn",[/gitlink\.org\.cn$/]],
+ ["osdn","OSDN",null,null,q=>`https://osdn.net/search/?q=${enc(q)}`,"site:osdn.net",[/osdn\.(net|jp)$/]],
+ ["opendev","OpenDev","gitea","https://opendev.org",q=>`https://opendev.org/explore/repos?q=${enc(q)}`,"site:opendev.org",[/^opendev\.org$/]],
+ ["gitprep","GitPrep",null,null,q=>web(q+" gitprep"),"gitprep",[/gitprep/]],
+ ["gitblit","Gitblit",null,null,q=>web(q+" inurl:summary/?r="),"gitblit",[/gitblit/]],
+ ["gitweb","Gitweb",null,null,q=>web(q+" inurl:a=summary"),"gitweb",[/gitweb/]],
+ ["cgit","Cgit",null,null,q=>web(q+" inurl:cgit"),"\"generated by cgit\"",[/cgit/,/^git\.kernel\.org$/,/^sourceware\.org$/,/^git\.freedesktop\.org$/,/^git\.zx2c4\.com$/]],
+ ["gitlist","GitList",null,null,q=>web(q+" gitlist"),"gitlist",[/gitlist/]],
+ ["github","GitHub","github",null,q=>`https://github.com/search?q=${enc(q)}&type=repositories`,"site:github.com",[/^github\.com$/]],
+].map(([id,n,api,base,s,w,h])=>({id,n,api,base,s,w:q=>web(q+" "+w),h}));
+const OTHER={id:"other",n:"Other forges",s:q=>`https://archive.softwareheritage.org/browse/search/?q=${enc(q)}`,w:q=>web(q+" git repository"),h:[]};
+const ALL=[...F,OTHER], byId=Object.fromEntries(ALL.map(f=>[f.id,f]));
+const archUrl=q=>`https://archive.softwareheritage.org/browse/search/?q=${enc(q)}`;
+let results=[], state={}, focus=null, view="all", run=0, lastQ="";
+
+async function get(url){const c=new AbortController(),t=setTimeout(()=>c.abort(),20000);
+  try{const r=await fetch(url,{signal:c.signal});if(!r.ok)throw new Error("HTTP "+r.status);return await r.json();}finally{clearTimeout(t)}}
+const A={
+  github:async(f,q)=>(await get(`https://api.github.com/search/repositories?q=${enc(q)}&per_page=100`)).items.map(x=>({title:x.full_name,url:x.html_url,desc:x.description,stars:x.stargazers_count,date:x.pushed_at,lang:x.language})),
+  gitea:async(f,q)=>{const d=await get(`${f.base}/api/v1/repos/search?q=${enc(q)}&limit=${N}`);return (d.data||d||[]).map(x=>({title:x.full_name,url:x.html_url||`${f.base}/${x.full_name}`,desc:x.description,stars:x.stars_count,date:x.updated_at,lang:x.language}))},
+  gitlab:async(f,q)=>(await get(`${f.base}/api/v4/projects?search=${enc(q)}&per_page=${N}&order_by=last_activity_at&simple=true`)).map(x=>({title:x.path_with_namespace,url:x.web_url,desc:x.description,stars:x.star_count,date:x.last_activity_at})),
+  pagure:async(f,q)=>((await get(`${f.base}/api/0/projects?pattern=*${enc(q)}*&per_page=${N}&short=true`)).projects||[]).map(x=>({title:x.fullname,url:`${f.base}/${x.fullname}`,desc:x.description})),
+  launchpad:async(f,q)=>((await get(`https://api.launchpad.net/1.0/projects?ws.op=search&text=${enc(q)}&ws.size=${N}`)).entries||[]).map(x=>({title:x.display_name||x.name,url:x.web_link,desc:x.summary,date:x.date_created})),
+  gitee:async(f,q)=>(await get(`https://gitee.com/api/v5/search/repositories?q=${enc(q)}&per_page=${N}`)).map(x=>({title:x.full_name,url:x.html_url,desc:x.description,stars:x.stargazers_count,date:x.pushed_at,lang:x.language})),
+  radicle:async(f,q)=>{const k=q.toLowerCase();return (await get(`https://seed.radicle.garden/api/v1/repos?show=all&perPage=500`)).map(x=>{const p=x.payloads?.["xyz.radicle.project"]?.data||{};return{title:p.name||x.rid,desc:p.description||"",url:`https://app.radicle.xyz/nodes/seed.radicle.garden/${x.rid}`}}).filter(x=>(x.title+" "+x.desc).toLowerCase().includes(k)).slice(0,N)},
+};
+async function swh(q){
+  const d=await get(`https://archive.softwareheritage.org/api/1/origin/search/${enc(q)}/?limit=500&with_visit=true`);
+  return d.flatMap(o=>{let u;try{u=new URL(o.url)}catch{return[]}
+    const host=u.hostname.replace(/^www\./,""),full=host+u.pathname;
+    const f=F.find(f=>f.h.some(rx=>rx.test(host)||rx.test(full)))||OTHER;
+    return[{forge:f.id,arch:1,title:(host+u.pathname).replace(/\/$/,""),url:o.url,desc:"Archived origin"}]});
+}
+
+
+const $=id=>document.getElementById(id);
+let on=Object.fromEntries(ALL.map(f=>[f.id,false])), blocked=false, manual={};
+/* only the forges that hold related repos light up; a tap still includes or leaves one out */
+const auto=()=>ALL.forEach(f=>{if(!(f.id in manual))on[f.id]=count(f.id)>0;});
+const rel=r=>{const h=(r.title+" "+r.url+" "+(r.desc||"")).toLowerCase();return lastQ.toLowerCase().replace(/\*/g,"").split(/\s+/).filter(Boolean).every(w=>h.includes(w))};
+const count=id=>results.filter(r=>r.forge===id&&rel(r)).length;
+function urls(){
+  const seen=new Set(),L=[];
+  const words=lastQ.toLowerCase().replace(/\*/g,"").split(/\s+/).filter(Boolean);
+  for(const r of results){
+    const hay=(r.title+" "+r.url+" "+(r.desc||"")).toLowerCase(); if(!words.every(w=>hay.includes(w))) continue; const k=r.url.replace(/(\.git)?\/?$/,""); if(seen.has(k.toLowerCase())) continue; seen.add(k.toLowerCase()); L.push(k); }
+  return L;
+}
+function draw(){ if(lastQ) auto();
+  $("tiles").innerHTML=ALL.map(f=>{const s=state[f.id]?.s||(f.api?"idle":"idle"),n=count(f.id);
+    const st=s==="run"?"searching":s==="ok"?"live":s==="arch"?"archive":s==="err"?"blocked":f.api?"live api":"archive";
+    return `<a class="tile" data-id="${f.id}" data-s="${s==="run"?"run":n?"hit":"zero"}" href="${lastQ?f.s(lastQ):"#"}" target="_blank" rel="noopener"><b>${f.n}</b><span class="n">${lastQ&&s!=="run"?n:""}</span></a>`}).join("");
+  const L=urls(); $("out").value=L.join(", ");
+  $("osum").textContent=L.length?String(L.length):"";
+  const r=Object.values(state).filter(x=>x.s==="run").length;
+
+}
+async function search(q){
+  const id=++run; lastQ=q; results=[]; state={}; blocked=false; manual={}; $("note").hidden=true;
+  F.filter(f=>f.api).forEach(f=>state[f.id]={s:"run"}); state.other={s:"run"}; draw();
+  let net=0; const total=F.filter(f=>f.api).length+1;
+  const words=q.split(/\s+/).filter(Boolean), terms=words.map(w=>w.replace(/\*/g,"")).filter(Boolean);
+  const apiQ=terms.slice().sort((a,b)=>b.length-a.length)[0]||q;
+  const ghQ=words.map(w=>{const t=w.replace(/\*/g,"");return w.includes("*")?"("+["","e","er","ers","es","ed","ing","s","y"].map(x=>t+x).join(" OR ")+")":t}).join(" ");
+  const jobs=F.filter(f=>f.api).map(async f=>{
+    try{const rs=await A[f.api](f,f.api==="github"?ghQ:apiQ); if(id!==run)return; rs.forEach(r=>r.forge=f.id); results.push(...rs); state[f.id]={s:"ok"};}
+    catch(e){ if(id!==run)return; if(!String(e.message).startsWith("HTTP")) net++; state[f.id]={s:"err"}; }
+    draw();
+  });
+  jobs.push((async()=>{
+    try{let rs=await swh(terms.join(" ")); if(!rs.length&&terms.length>1) rs=await swh(apiQ); if(id!==run)return; results.push(...rs); rs.forEach(r=>{if(!state[r.forge]||state[r.forge].s==="err") state[r.forge]={s:"arch"}}); if(state.other.s==="run") state.other={s:"arch"};}
+    catch(e){ if(id===run){net++; state.other={s:"err"};} }
+    if(id===run) draw();
+  })());
+  await Promise.all(jobs);
+  if(id===run&&net>=total){ blocked=true; $("note").textContent="Network blocked in this viewer. Open the file in Chrome or Firefox."; $("note").hidden=false; draw(); }
+}
+$("f").addEventListener("submit",e=>{e.preventDefault();const q=$("q").value.trim();if(q)search(q)});
+$("tiles").addEventListener("click",e=>{const t=e.target.closest(".tile");if(t&&!lastQ)e.preventDefault();});
+
+$("copy").addEventListener("click",async()=>{const b=$("copy");try{await navigator.clipboard.writeText($("out").value);b.textContent="Copied"}catch{$("out").select();b.textContent="Selected"}setTimeout(()=>b.textContent="Copy",1500)});
+draw();
+</script>
+</body>
+</html>
