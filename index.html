@@ -210,6 +210,8 @@ $("tiles").addEventListener("click",e=>{const t=e.target.closest(".tile");if(t&&
 
 $("copy").addEventListener("click",async()=>{const b=$("copy");try{await navigator.clipboard.writeText($("out").value);b.textContent="Copied"}catch{$("out").select();b.textContent="Selected"}setTimeout(()=>b.textContent="Copy",1500)});
 draw();
+/* ?q=topic opens the page on that search (links from other tools) */
+try{const q0=new URLSearchParams(location.search).get("q");if(q0){$("q").value=q0;search(q0.trim());}}catch(e){}
 </script>
 </body>
 </html>
