@@ -31,7 +31,7 @@ To add a forge: one line in the `F` table of `index.html` (id, name, API family,
 
 Built for [Insert Koin](https://mauktenieb.github.io/insertkoin/), the browser arcade of the Korhogo Fauna, where it has its own room.
 
-Other tools by Mauk Tenieb: [Detour](https://github.com/MaukTenieb/detour): portraits to sprite strips, Python · [FaunaTor](https://github.com/MaukTenieb/faunator): Tor inside a web page · [KorhoTube](https://github.com/MaukTenieb/korhotube): a YouTube channel as JSON · [Photofauna](https://github.com/MaukTenieb/Photofauna): the pocket photo emulator · [TorView](https://github.com/MaukTenieb/torview): a minimal Tor browser, Go.
+Other tools by Mauk Tenieb: [Detour](https://github.com/MaukTenieb/detour): portraits to sprite strips, then their catchlights · [FaunaTor](https://github.com/MaukTenieb/faunator): Tor inside a web page · [KorhoTube](https://github.com/MaukTenieb/korhotube): a YouTube channel as JSON · [Photofauna](https://github.com/MaukTenieb/Photofauna): the pocket photo emulator · [TorView](https://github.com/MaukTenieb/torview): a minimal Tor browser, Go.
 
 Start here: https://mauktenieb.github.io/
 <!-- network:end -->
