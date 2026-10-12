@@ -1,6 +1,6 @@
 # Reporhogo
 
-One topic, forty-one code forges. Type a word; Reporhogo searches GitHub, GitLab, Codeberg, SourceHut, Gitee, Radicle and thirty-five other forges at once, and lists the repositories in one place.
+Reporhogo searches forty-one code forges for a topic and lists the repositories it finds. Type a word; Reporhogo searches GitHub, GitLab, Codeberg, SourceHut, Gitee, Radicle and thirty-five other forges at once, and lists the repositories in one place.
 
 **Online: https://mauktenieb.github.io/reporhogo/**
 
