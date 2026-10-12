@@ -29,7 +29,7 @@ To add a forge: one line in the `F` table of `index.html` (id, name, API family,
 <!-- network:start -->
 ## Provenance
 
-Built for [Insert Koin](https://mauktenieb.github.io/insertkoin/), the games and machines of Korhogo in the browser, where it has its own room.
+Built for [Insert Koin](https://mauktenieb.github.io/insertkoin/), Mauk Tenieb's Korhogo world, games and machines in a browser, where it has its own room.
 
 Other tools by Mauk Tenieb: [Detour](https://github.com/MaukTenieb/detour): cuts portrait sheets into sprite strips and places the eye lights · [FaunaTor](https://github.com/MaukTenieb/faunator): reads web and .onion pages through Tor clients that run in the page · [KorhoTube](https://github.com/MaukTenieb/korhotube): lists the public videos of a YouTube channel as JSON · [Photofauna](https://github.com/MaukTenieb/Photofauna): a photo editor with 44 looks, part of Insert Koin · [TorView](https://github.com/MaukTenieb/torview): a desktop browser in Go that routes its traffic through the official Tor daemon.
 
