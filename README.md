@@ -17,6 +17,10 @@ Reporhogo is one HTML file; a browser opens `index.html` and runs the search dir
 
 Codeberg · Forgejo · Gitea · SourceHut · GitLab · Bitbucket · Gerrit · Phorge · Pagure · Savannah · Launchpad · Fossil · Gogs · OneDev · Radicle · Pijul Nest · GitBucket · Kallithea · Allura · Heptapod · Disroot Git · Tangled · GitGud · repo.or.cz · Gitiles · SourceForge · NotABug · Framagit · Gitee · GitCode · CODING · AtomGit · GitLink · OSDN · OpenDev · GitPrep · Gitblit · Gitweb · Cgit · GitList · GitHub
 
+## Search from a file
+
+Each topic written in `queue.txt` (one per line) and pushed to `main` runs Reporhogo in a real browser, in GitHub Actions. The results land in the branch `result`: `results.md` lists, per topic, the forges that answered and the matching repositories, sorted by stars; `results.json` holds the same data.
+
 ## Limits
 
 - GitHub allows 10 unauthenticated searches a minute per IP address.

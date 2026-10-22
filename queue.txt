@@ -1,0 +1,13 @@
+nostr spam filter
+proof of work anti spam
+captcha free spam protection
+lightning micropayments browser
+web monetization
+github sponsors
+progressive web app offline install
+tauri static site desktop
+capacitor android html
+content security policy static site
+subresource integrity
+cookie consent banner
+cookieless analytics
