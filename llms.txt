@@ -1,9 +1,11 @@
 # Reporhogo
 
-> Reporhogo searches forty-one code forges for a topic and lists the repositories it finds. Searches GitHub, GitLab, Codeberg, SourceHut, Gitee, Radicle and thirty-five other forges at once, from a single HTML page, through their public APIs and the Software Heritage archive. Code under the MIT License.
+> Reporhogo searches forty-one code forges for a topic and lists the repositories it finds. It searches GitHub, GitLab, Codeberg, SourceHut, Gitee, Radicle and 35 other forges at once, from a single HTML page, through their public APIs and the Software Heritage archive. By Mauk Tenieb & Korhogo. Code under MIT, method under CC BY 4.0, Korhogo material reserved; credit Mauk Tenieb & Korhogo.
 
 ## Links
 - [mauktenieb.github.io, the index of Mauk Tenieb's sites](https://mauktenieb.github.io/)
 - [Reporhogo](https://mauktenieb.github.io/reporhogo/)
 - [Source](https://github.com/MaukTenieb/reporhogo)
+- [Build guide](https://github.com/MaukTenieb/method)
+- [Licence](https://github.com/MaukTenieb/reporhogo/blob/main/LICENSE)
 - [Insert Koin](https://mauktenieb.github.io/insertkoin/)

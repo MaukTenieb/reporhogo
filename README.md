@@ -1,17 +1,19 @@
 # Reporhogo
 
-Reporhogo searches forty-one code forges for a topic and lists the repositories it finds. Type a word; Reporhogo searches GitHub, GitLab, Codeberg, SourceHut, Gitee, Radicle and thirty-five other forges at once, and lists the repositories in one place.
+By Mauk Tenieb & Korhogo. Build guide: [MaukTenieb/method](https://github.com/MaukTenieb/method).
 
-**Online: https://mauktenieb.github.io/reporhogo/**
+Reporhogo searches forty-one code forges for a topic and lists the repositories it finds. Type a word. Reporhogo searches GitHub, GitLab, Codeberg, SourceHut, Gitee, Radicle and 35 other forges at once, and lists the repositories in one place.
+
+Online: https://mauktenieb.github.io/reporhogo/
 
 Reporhogo is one HTML file; a browser opens `index.html` and runs the search directly.
 
 ## How it works
 
-- **Live search through public APIs**, from your browser: GitHub, Gitee, Launchpad, Pagure, Radicle (seed.radicle.garden), the Gitea family (Codeberg, Forgejo, Gitea, Gogs, Disroot, NotABug, OpenDev) and the GitLab family (GitLab, Heptapod, GitGud, Framagit).
-- **Software Heritage** (archive.softwareheritage.org) fills in every other forge: each archived origin is sorted under its forge by host name.
-- **Forges with no public search API** get a direct link to their own search page, or a site-restricted web search.
-- Only the forges that hold matching repositories light up. Tap a tile to keep it or leave it out; the results list follows.
+- Your browser searches live through public APIs: GitHub, Gitee, Launchpad, Pagure, Radicle (seed.radicle.garden), the Gitea family (Codeberg, Forgejo, Gitea, Gogs, Disroot, NotABug, OpenDev) and the GitLab family (GitLab, Heptapod, GitGud, Framagit).
+- Software Heritage (archive.softwareheritage.org) fills in every other forge. Reporhogo sorts each archived origin under its forge by host name.
+- For forges that offer a web search page only, Reporhogo gives a direct link to that page, or a site-restricted web search.
+- The tiles of the forges with matching repositories light up. Tap a tile to keep it or leave it out; the results list follows.
 
 ## The forty-one forges
 
@@ -19,7 +21,7 @@ Codeberg · Forgejo · Gitea · SourceHut · GitLab · Bitbucket · Gerrit · Ph
 
 ## Search from a file
 
-Each topic written in `queue.txt` (one per line) and pushed to `main` runs Reporhogo in a real browser, in GitHub Actions. The results land in the branch `result`: `results.md` lists, per topic, the forges that answered and the matching repositories, sorted by stars; `results.json` holds the same data.
+Write topics in `queue.txt`, one per line, and push it to `main`. GitHub Actions then runs Reporhogo in a real browser on each topic and writes the results to the branch `result`. `results.md` lists, per topic, the forges that answered and the matching repositories, sorted by stars; `results.json` gives the same data as JSON.
 
 ## Limits
 
@@ -28,7 +30,7 @@ Each topic written in `queue.txt` (one per line) and pushed to `main` runs Repor
 
 ## Contributing
 
-To add a forge: one line in the `F` table of `index.html` (id, name, API family, base URL, search URL, web query, host patterns). Issues and pull requests are welcome.
+To add a forge, add one line to the `F` table of `index.html` (id, name, API family, base URL, search URL, web query, host patterns). Issues and pull requests are welcome.
 
 <!-- network:start -->
 ## Provenance
@@ -40,8 +42,8 @@ Other tools by Mauk Tenieb: [Detour](https://github.com/MaukTenieb/detour): cuts
 Index of Mauk Tenieb's sites: https://mauktenieb.github.io/
 <!-- network:end -->
 
-## License
+Related: [mauktenieb.github.io](https://mauktenieb.github.io/) · [MaukTenieb/method](https://github.com/MaukTenieb/method)
 
-Code: MIT (see `LICENSE`). The names Reporhogo, Korhogo and Korhogo Fauna are not covered by the license.
+## Rights
 
-By [Mauk Tenieb](https://mauktenieb.github.io/). Also part of [Insert Koin](https://mauktenieb.github.io/insertkoin/).
+Code under MIT, method under CC BY 4.0, Korhogo material reserved; credit Mauk Tenieb & Korhogo. Details: [LICENSE](LICENSE).
