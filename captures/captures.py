@@ -9,9 +9,10 @@ Options:
   --prefix         every address under URL (a whole site or folder), sliced year by year
   --name REGEX     keep the addresses whose file name matches REGEX (with --prefix)
   --alias HOST     another host name of the same site; repeatable
+  --plain          the address as written, without its other spellings
   --from YEAR      first year
   --to YEAR        last year
-  --sources LIST   comma-separated ids (default: all); see SOURCES
+  --sources LIST   comma-separated ids of archives.json, or "timemaps" for every Memento archive (default: all)
   --fetch N        download up to N distinct captures per address and keep the readable ones
   --out DIR        output folder (default: out)
 
@@ -223,12 +224,21 @@ def cc_fetch(replay: str) -> bytes:
 
 # ---------------------------------------------------------------- Memento timemaps (link format)
 
-TIMEMAPS = {
-    "archivetoday": "https://archive.ph/timemap/{url}",
-    "loc": "https://webarchive.loc.gov/all/timemap/link/{url}",
-    "ukwa": "https://www.webarchive.org.uk/wayback/archive/timemap/link/{url}",
-    "memento": "https://timetravel.mementoweb.org/timemap/link/{url}",
-}
+DIRECTORY = os.path.join(os.path.dirname(os.path.abspath(__file__)), "archives.json")
+
+
+def load_directory(path: str = DIRECTORY) -> list[dict]:
+    """The directory of web archives: archives.json (MemGator list, Wikipedia list, Captures)."""
+    try:
+        with open(path, encoding="utf-8") as f:
+            return json.load(f)["archives"]
+    except (OSError, ValueError, KeyError):
+        return []
+
+
+TIMEMAPS = {a["id"]: a["timemap"] + "{url}" for a in load_directory() if a.get("kind") == "timemap"}
+ACTIVE = [a["id"] for a in load_directory() if a.get("kind") == "timemap" and not a.get("status")]
+ALIASES = {"archivetoday": "archive.today", "loc": "webarchive.loc.gov", "ukwa": "webarchive.org.uk"}
 
 
 def parse_timemap(body: bytes, source: str) -> list[dict]:
@@ -282,15 +292,25 @@ def ghost(url: str, prefix: bool, frm, to) -> list[dict]:
 
 
 SOURCES = {
-    "wayback": wayback,          # Internet Archive, Wayback Machine
-    "arquivo": arquivo,          # Arquivo.pt
+    "wayback": wayback,          # Internet Archive, Wayback Machine (CDX)
+    "arquivo": arquivo,          # Arquivo.pt (CDX)
     "commoncrawl": commoncrawl,  # Common Crawl, every crawl since 2008
-    "archivetoday": timemap("archivetoday"),
-    "loc": timemap("loc"),       # Library of Congress
-    "ukwa": timemap("ukwa"),     # UK Web Archive
-    "memento": timemap("memento"),  # Memento Time Travel, aggregator of national and university archives
-    "ghost": ghost,              # Ghost Archive
+    "ghost": ghost,              # Ghost Archive (search page)
 }
+SOURCES.update({i: timemap(i) for i in TIMEMAPS})  # every archive of archives.json with a Memento timemap
+
+
+def pick_sources(spec: str | None) -> list[str]:
+    """Ids, aliases and the group "timemaps" (every active Memento archive of the directory)."""
+    if not spec:
+        return ["wayback", "arquivo", "commoncrawl", "ghost"] + ACTIVE
+    out = []
+    for s in spec.split(","):
+        s = ALIASES.get(s.strip(), s.strip())
+        for x in (ACTIVE if s == "timemaps" else [s]):
+            if x in SOURCES and x not in out:
+                out.append(x)
+    return out
 
 
 # ---------------------------------------------------------------- address variants
@@ -376,11 +396,11 @@ def log(msg: str) -> None:
 
 
 def run(args) -> dict:
-    srcs = [s for s in (args.sources.split(",") if args.sources else SOURCES) if s in SOURCES]
+    srcs = pick_sources(args.sources)
     rows = []
     for url in args.urls:
         bare = re.sub(r"^https?://", "", url)
-        targets = [bare.rstrip("*")] if args.prefix else variants(url, args.alias or [])
+        targets = [bare.rstrip("*")] if args.prefix else ([bare] if args.plain else variants(url, args.alias or []))
         if args.prefix:
             targets += [re.sub(r"^[^/]+", a, bare) for a in (args.alias or [])]
         for s in srcs:
@@ -447,6 +467,7 @@ def parser() -> argparse.ArgumentParser:
     p.add_argument("urls", nargs="*")
     p.add_argument("--prefix", action="store_true")
     p.add_argument("--name")
+    p.add_argument("--plain", action="store_true")
     p.add_argument("--alias", action="append")
     p.add_argument("--from", dest="frm", type=int)
     p.add_argument("--to", type=int)

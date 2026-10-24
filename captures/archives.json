@@ -1,0 +1,701 @@
+{
+ "sources": {
+  "MemGator": "https://github.com/oduwsdl/MemGator/blob/master/docs/archives.json",
+  "Wikipedia": "https://en.wikipedia.org/wiki/List_of_Web_archiving_initiatives",
+  "IIPC": "https://github.com/iipc/awesome-web-archiving"
+ },
+ "date": "2026-10-24",
+ "archives": [
+  {
+   "id": "wayback",
+   "name": "Internet Archive, Wayback Machine",
+   "country": "USA",
+   "site": "https://web.archive.org/",
+   "kind": "cdx",
+   "access": "online",
+   "source": "captures"
+  },
+  {
+   "id": "arquivo",
+   "name": "Arquivo.pt",
+   "country": "Portugal",
+   "site": "https://arquivo.pt/",
+   "kind": "cdx",
+   "access": "online",
+   "source": "captures"
+  },
+  {
+   "id": "commoncrawl",
+   "name": "Common Crawl",
+   "country": "USA",
+   "site": "https://commoncrawl.org/",
+   "kind": "cdx",
+   "access": "online",
+   "source": "captures"
+  },
+  {
+   "id": "memento",
+   "name": "Memento Time Travel (aggregator)",
+   "country": "USA",
+   "site": "https://timetravel.mementoweb.org/",
+   "kind": "timemap",
+   "timemap": "https://timetravel.mementoweb.org/timemap/link/",
+   "access": "online",
+   "source": "captures"
+  },
+  {
+   "id": "ghost",
+   "name": "Ghost Archive",
+   "country": "international",
+   "site": "https://ghostarchive.org/",
+   "kind": "search",
+   "access": "online",
+   "source": "captures"
+  },
+  {
+   "id": "archive.today",
+   "name": "Archive.today",
+   "country": "international",
+   "site": "http://archive.today/",
+   "kind": "timemap",
+   "timemap": "http://archive.today/timemap/",
+   "access": "online",
+   "source": "MemGator"
+  },
+  {
+   "id": "pastpages.org",
+   "name": "PastPages Web Archive",
+   "country": "USA",
+   "site": "http://www.pastpages.org/",
+   "kind": "timemap",
+   "timemap": "http://www.pastpages.org/timemap/link/",
+   "access": "online",
+   "source": "MemGator",
+   "status": "closed or moved"
+  },
+  {
+   "id": "perma.cc",
+   "name": "Perma Archive",
+   "country": "USA",
+   "site": "https://perma.cc/",
+   "kind": "timemap",
+   "timemap": "https://perma.cc/timemap/link/",
+   "access": "online",
+   "source": "MemGator"
+  },
+  {
+   "id": "swap.stanford.edu",
+   "name": "Stanford Web Archive",
+   "country": "USA",
+   "site": "https://swap.stanford.edu/",
+   "kind": "timemap",
+   "timemap": "https://swap.stanford.edu/timemap/link/",
+   "access": "online",
+   "source": "MemGator",
+   "status": "inactive in MemGator"
+  },
+  {
+   "id": "waext.banq.qc.ca",
+   "name": "BAnQ",
+   "country": "Canada (Québec)",
+   "site": "https://waext.banq.qc.ca/",
+   "kind": "timemap",
+   "timemap": "https://waext.banq.qc.ca/wayback/timemap/link/",
+   "access": "online",
+   "source": "MemGator"
+  },
+  {
+   "id": "warp.da.ndl.go.jp",
+   "name": "National Diet Library, Japan",
+   "country": "Japan",
+   "site": "https://warp.da.ndl.go.jp/",
+   "kind": "timemap",
+   "timemap": "https://warp.da.ndl.go.jp/collections/timemap/",
+   "access": "online",
+   "source": "MemGator"
+  },
+  {
+   "id": "wayback.archive-it.org",
+   "name": "Archive-It",
+   "country": "USA",
+   "site": "https://wayback.archive-it.org/",
+   "kind": "timemap",
+   "timemap": "https://wayback.archive-it.org/all/timemap/link/",
+   "access": "online",
+   "source": "MemGator"
+  },
+  {
+   "id": "wayback.vefsafn.is",
+   "name": "Icelandic Web Archive",
+   "country": "Iceland",
+   "site": "https://vefsafn.is/",
+   "kind": "timemap",
+   "timemap": "https://vefsafn.is/timemap/link/",
+   "access": "online",
+   "source": "MemGator"
+  },
+  {
+   "id": "web.archive.bibalex.org",
+   "name": "Bibliotheca Alexandrina Web Archive",
+   "country": "Egypt",
+   "site": "http://web.archive.bibalex.org/",
+   "kind": "timemap",
+   "timemap": "http://web.archive.bibalex.org/web/timemap/link/",
+   "access": "online",
+   "source": "MemGator",
+   "status": "inactive in MemGator"
+  },
+  {
+   "id": "web.archive.org.au",
+   "name": "Australian Web Archive",
+   "country": "Australia",
+   "site": "https://web.archive.org.au/",
+   "kind": "timemap",
+   "timemap": "https://web.archive.org.au/awa/timemap/link/",
+   "access": "online",
+   "source": "MemGator"
+  },
+  {
+   "id": "webarchiveweb.bac-lac.canada.ca",
+   "name": "Library and Archives Canada",
+   "country": "Canada",
+   "site": "https://webarchiveweb.wayback.bac-lac.canada.ca/",
+   "kind": "timemap",
+   "timemap": "https://webarchiveweb.wayback.bac-lac.canada.ca/web/timemap/link/",
+   "access": "online",
+   "source": "MemGator"
+  },
+  {
+   "id": "webarchive.loc.gov",
+   "name": "Library of Congress",
+   "country": "USA",
+   "site": "https://webarchive-beta.loc.gov/",
+   "kind": "timemap",
+   "timemap": "https://webarchive.loc.gov/all/timemap/link/",
+   "access": "online",
+   "source": "MemGator"
+  },
+  {
+   "id": "webarchive.nationalarchives.gov",
+   "name": "UK National Archives Web Archive",
+   "country": "United Kingdom",
+   "site": "https://webarchive.nationalarchives.gov.uk/",
+   "kind": "timemap",
+   "timemap": "https://webarchive.nationalarchives.gov.uk/timemap/",
+   "access": "online",
+   "source": "MemGator",
+   "status": "inactive in MemGator"
+  },
+  {
+   "id": "webarchive.nrscotland.gov.uk",
+   "name": "National Records of Scotland",
+   "country": "United Kingdom",
+   "site": "https://webarchive.nrscotland.gov.uk/",
+   "kind": "timemap",
+   "timemap": "https://webarchive.nrscotland.gov.uk/timemap/link/",
+   "access": "online",
+   "source": "MemGator"
+  },
+  {
+   "id": "webarchive.org.uk",
+   "name": "UK Web Archive",
+   "country": "United Kingdom",
+   "site": "https://www.webarchive.org.uk/",
+   "kind": "timemap",
+   "timemap": "https://www.webarchive.org.uk/wayback/archive/timemap/link/",
+   "access": "online",
+   "source": "MemGator"
+  },
+  {
+   "id": "webarchive.parliament.uk",
+   "name": "UK Parliament Web Archive",
+   "country": "United Kingdom",
+   "site": "http://webarchive.parliament.uk/",
+   "kind": "timemap",
+   "timemap": "http://webarchive.parliament.uk/timemap/link/",
+   "access": "online",
+   "source": "MemGator"
+  },
+  {
+   "id": "webarchive.proni.gov.uk",
+   "name": "PRONI Web Archive",
+   "country": "United Kingdom",
+   "site": "http://webarchive.proni.gov.uk/",
+   "kind": "timemap",
+   "timemap": "http://webarchive.proni.gov.uk/timemap/",
+   "access": "online",
+   "source": "MemGator",
+   "status": "closed or moved"
+  },
+  {
+   "id": "wayback.nli.org.il",
+   "name": "National Library of Israel",
+   "country": "Israel",
+   "site": "https://wayback.nli.org.il/",
+   "kind": "timemap",
+   "timemap": "https://wayback.nli.org.il/timemap/link/",
+   "access": "online",
+   "source": "MemGator",
+   "status": "inactive in MemGator"
+  },
+  {
+   "id": "op-europa-eu",
+   "name": "EU Web Archive",
+   "country": "European Union",
+   "site": "https://op.europa.eu/en/web/euwebarchive",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "arkiwera-se",
+   "name": "Arkiwera",
+   "country": "Sweden",
+   "site": "https://arkiwera.se/wp/en/",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "digital-archives-alabama-gov",
+   "name": "Alabama Department of Archives and History",
+   "country": "USA",
+   "site": "https://digital.archives.alabama.gov/",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "pandora-nla-gov-au",
+   "name": "Pandora, Australia's Web Archive",
+   "country": "Australia",
+   "site": "http://pandora.nla.gov.au/",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "kbr-be",
+   "name": "Royal Library of Belgium (KBR)",
+   "country": "Belgium",
+   "site": "https://www.kbr.be/",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "arch-be",
+   "name": "State Archives of Belgium",
+   "country": "Belgium",
+   "site": "http://www.arch.be/index.php?l=en",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "kb-dk",
+   "name": "Netarkivet",
+   "country": "Denmark",
+   "site": "https://www.kb.dk/en/find-materials/collections/netarkivet",
+   "kind": "portal",
+   "access": "on site or for approved researchers",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "wayback-library-yorku-ca",
+   "name": "York University Libraries Wayback",
+   "country": "Canada",
+   "site": "https://wayback.library.yorku.ca",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "webarchiv-cz",
+   "name": "Webarchiv, National Library of the Czech Republic",
+   "country": "Czech Republic",
+   "site": "http://webarchiv.cz/en",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "nlib-ee",
+   "name": "Estonian Web Archive",
+   "country": "Estonia",
+   "site": "http://www.nlib.ee/index.php?id=21581",
+   "kind": "portal",
+   "access": "on site or for approved researchers",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "verkkoarkisto-kansalliskirjasto-fi",
+   "name": "Finnish Web Archive",
+   "country": "Finland",
+   "site": "https://verkkoarkisto.kansalliskirjasto.fi/va/index.php/info",
+   "kind": "portal",
+   "access": "on site or for approved researchers",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "bnf-fr",
+   "name": "BnF, Archives de l'internet",
+   "country": "France",
+   "site": "https://www.bnf.fr/en/consult-archives-de-linternet",
+   "kind": "portal",
+   "access": "on site or for approved researchers",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "ina-fr",
+   "name": "Ina",
+   "country": "France",
+   "site": "http://www.ina.fr",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "ediasporas-ticmigrations-fr",
+   "name": "E-diasporas",
+   "country": "France",
+   "site": "http://ediasporas.ticmigrations.fr/",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "webarchiv-onb-ac-at",
+   "name": "Webarchiv Austria",
+   "country": "Austria",
+   "site": "https://webarchiv.onb.ac.at",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "dnb-de",
+   "name": "Deutsche Nationalbibliothek",
+   "country": "Germany",
+   "site": "http://www.dnb.de/EN/Netzpublikationen/Webarchiv/webarchiv_node.html",
+   "kind": "portal",
+   "access": "on site or for approved researchers",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "webarchiv-bundestag-de",
+   "name": "Web archive of the German Bundestag",
+   "country": "Germany",
+   "site": "http://webarchiv.bundestag.de",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "bsz-bw-de",
+   "name": "Bibliotheksservice-Zentrum Baden-Württemberg",
+   "country": "Germany",
+   "site": "http://www.bsz-bw.de/index.html",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "webarchive-lu",
+   "name": "Luxembourg Web Archive",
+   "country": "Luxembourg",
+   "site": "https://www.webarchive.lu/",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "haw-nsk-hr",
+   "name": "Croatian Web Archive",
+   "country": "Croatia",
+   "site": "http://haw.nsk.hr/",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "archive-aueb-gr",
+   "name": "AUEB Web Archive",
+   "country": "Greece",
+   "site": "http://archive.aueb.gr/",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "webdepozit-sk",
+   "name": "Webdepozit",
+   "country": "Slovakia",
+   "site": "https://www.webdepozit.sk/?lang=en",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "arhiv-nuk-uni-lj-si",
+   "name": "Slovenian Web Archive",
+   "country": "Slovenia",
+   "site": "http://arhiv.nuk.uni-lj.si/",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "bne-es",
+   "name": "Archivo de la Web Española",
+   "country": "Spain",
+   "site": "https://www.bne.es/es/colecciones/archivo-web-espanola",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "padicat-cat",
+   "name": "PADICAT, Web Archive of Catalonia",
+   "country": "Spain",
+   "site": "http://www.padicat.cat/en/",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "kb-se",
+   "name": "Kulturarw3",
+   "country": "Sweden",
+   "site": "https://www.kb.se/hitta-och-bestall/hitta-i-samlingarna/kulturarw3.html",
+   "kind": "portal",
+   "access": "on site or for approved researchers",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "e-helvetica-nb-admin-ch",
+   "name": "Web Archive Switzerland (e-Helvetica)",
+   "country": "Switzerland",
+   "site": "http://www.e-helvetica.nb.admin.ch",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "beeldengeluidwebarchief-nl",
+   "name": "Sound and Vision web archive",
+   "country": "Netherlands",
+   "site": "http://beeldengeluidwebarchief.nl/",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "webarchiving-nl",
+   "name": "KB Web Archive",
+   "country": "Netherlands",
+   "site": "http://www.webarchiving.nl/",
+   "kind": "portal",
+   "access": "on site or for approved researchers",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "nb-no",
+   "name": "Nettarkivet, National Library of Norway",
+   "country": "Norway",
+   "site": "https://www.nb.no/samlingen/nettarkivet/",
+   "kind": "portal",
+   "access": "on site or for approved researchers",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "webarhivs-lndb-lv",
+   "name": "National Library of Latvia web archive",
+   "country": "Latvia",
+   "site": "http://webarhivs.lndb.lv/",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "nationalarchives-gov-uk",
+   "name": "UK Government Web Archive",
+   "country": "United Kingdom",
+   "site": "https://www.nationalarchives.gov.uk/webarchive/",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "eresources-nlb-gov-sg",
+   "name": "Web Archive Singapore",
+   "country": "Singapore",
+   "site": "https://eresources.nlb.gov.sg/webarchives",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "webarchive-ncl-edu-tw",
+   "name": "Web Archive Taiwan",
+   "country": "Taiwan",
+   "site": "http://webarchive.ncl.edu.tw/nclwa98Front/",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "webarchive-lib-ntu-edu-tw",
+   "name": "NTU Web Archiving System",
+   "country": "Taiwan",
+   "site": "http://webarchive.lib.ntu.edu.tw/eng/default.asp",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "oasis-go-kr",
+   "name": "OASIS, National Library of Korea",
+   "country": "South Korea",
+   "site": "http://www.oasis.go.kr/intro_new/intro_overview_e.jsp",
+   "kind": "portal",
+   "access": "on site or for approved researchers",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "natlib-govt-nz",
+   "name": "New Zealand Web Archive",
+   "country": "New Zealand",
+   "site": "https://natlib.govt.nz/collections/a-z/new-zealand-web-archive",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "ruarxive-org",
+   "name": "Russian National Digital Archive",
+   "country": "Russia",
+   "site": "http://ruarxive.org",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "digital-cacak-dis-rs",
+   "name": "Web archive of Cacak",
+   "country": "Serbia",
+   "site": "http://digital.cacak-dis.rs/english/web-archive-of-cacak/",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "linc-tas-gov-au",
+   "name": "Tasmanian Web Archive",
+   "country": "Australia",
+   "site": "http://www.linc.tas.gov.au/tasmaniasheritage/search/tasmanian-websites",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "preservation-library-harvard-edu",
+   "name": "Harvard Library Web Archiving",
+   "country": "USA",
+   "site": "https://preservation.library.harvard.edu/web-archiving",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "library-columbia-edu",
+   "name": "Columbia University Libraries Web Archives",
+   "country": "USA",
+   "site": "https://library.columbia.edu/collections/web-archives.html",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "webarchives-ncdcr-gov",
+   "name": "North Carolina State Government Web Site Archives",
+   "country": "USA",
+   "site": "http://webarchives.ncdcr.gov/",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "lanic-utexas-edu",
+   "name": "Latin American Web Archiving Project",
+   "country": "USA",
+   "site": "http://lanic.utexas.edu/project/archives",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "guides-library-manoa-hawaii-edu",
+   "name": "Web Archiving Project of the Pacific Islands",
+   "country": "USA",
+   "site": "https://guides.library.manoa.hawaii.edu/pacificwebarchive",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "bentley-umich-edu",
+   "name": "Bentley Historical Library Web Archives",
+   "country": "USA",
+   "site": "https://bentley.umich.edu/dchome/webarchives/index.php",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "govinfo-library-unt-edu",
+   "name": "University of North Texas CyberCemetery",
+   "country": "USA",
+   "site": "http://govinfo.library.unt.edu/",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "httparchive-org",
+   "name": "HTTP Archive",
+   "country": "USA",
+   "site": "https://httparchive.org/",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "nlm-nih-gov",
+   "name": "NLM Web Collecting and Archiving",
+   "country": "USA",
+   "site": "https://www.nlm.nih.gov/webcollecting/index.html",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "librariesarchives-si-edu",
+   "name": "Smithsonian Libraries and Archives",
+   "country": "USA",
+   "site": "https://librariesarchives.si.edu/",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  },
+  {
+   "id": "webarchive-lib-cuhk-edu-hk",
+   "name": "CUHK Web Archive",
+   "country": "Hong Kong",
+   "site": "https://webarchive.lib.cuhk.edu.hk/",
+   "kind": "portal",
+   "access": "portal of the archive",
+   "source": "Wikipedia, List of Web archiving initiatives"
+  }
+ ]
+}

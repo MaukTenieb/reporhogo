@@ -53,7 +53,7 @@ class Net:
             return 200, CC
         if "data.commoncrawl.org" in url:
             return 206, warc(PAGE)
-        if "archive.ph/timemap" in url:
+        if "archive.ph/timemap" in url or "archive.today/timemap" in url:
             return 200, TIMEMAP
         if "id_/" in url and "lost.htm" in url:
             return 200, ERRPAGE
@@ -86,10 +86,22 @@ class T(unittest.TestCase):
         self.assertEqual(C.readable(C.cc_fetch(cc[0]["replay"]))[1], "Cyliani")
 
     def test_timemap(self):
-        rows = C.timemap("archivetoday")("perso.example.fr/site/lost.htm", False, None, None)
+        rows = C.timemap("archive.today")("perso.example.fr/site/lost.htm", False, None, None)
         self.assertEqual(len(rows), 1)
         self.assertEqual(rows[0]["ts"], "20100101000000")
         self.assertEqual(rows[0]["url"], "http://perso.example.fr/site/lost.htm")
+
+    def test_directory(self):
+        ids = {a["id"] for a in C.load_directory()}
+        self.assertTrue({"wayback", "arquivo", "commoncrawl", "archive.today", "webarchive.org.uk"} <= ids)
+        self.assertEqual(C.pick_sources("archivetoday,loc"), ["archive.today", "webarchive.loc.gov"])
+        self.assertIn("warp.da.ndl.go.jp", C.pick_sources("timemaps"))
+        self.assertTrue(all(a["kind"] in ("cdx", "timemap", "search", "portal") for a in C.load_directory()))
+
+    def test_plain(self):
+        args = C.parser().parse_args(["http://perso.example.fr/site/lost.htm", "--plain", "--sources", "archivetoday"])
+        C.run(args)
+        self.assertEqual(sum("archive.ph/timemap" in u or "archive.today/timemap" in u for u in self.net.calls), 1)
 
     def test_variants(self):
         v = C.variants("http://perso.example.fr/site/Le Mercure.htm", ["other.example.fr"])
