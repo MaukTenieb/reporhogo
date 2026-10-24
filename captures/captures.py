@@ -13,6 +13,7 @@ Options:
   --from YEAR      first year
   --to YEAR        last year
   --sources LIST   comma-separated ids of archives.json, or "timemaps" for every Memento archive (default: all)
+  --images TS      download the images of the page as captured at TS (Wayback Machine), into assets/
   --fetch N        download up to N distinct captures per address and keep the readable ones
   --out DIR        output folder (default: out)
 
@@ -389,6 +390,33 @@ def fetch(rows: list[dict], n: int, outdir: str, bad: set[str]) -> list[dict]:
     return found
 
 
+# ---------------------------------------------------------------- images of a recovered page
+
+def page_images(url: str, ts: str, outdir: str) -> list[dict]:
+    """The images of one archived page: the page as received at ts, then each <img> from the Wayback Machine
+    (suffix im_, nearest capture), saved under assets/ with their own file names."""
+    st, raw = get(f"https://web.archive.org/web/{ts}id_/{url}")
+    if st != 200:
+        return [{"src": url, "status": st, "file": ""}]
+    text = raw.decode("latin-1")
+    srcs = list(dict.fromkeys(re.findall(r'(?i)<img[^>]+src="([^"]+)"', text)))
+    os.makedirs(os.path.join(outdir, "assets"), exist_ok=True)
+    out = []
+    for src in srcs:
+        absu = urllib.parse.urljoin(url, html.unescape(src))
+        if not absu.startswith("http") or "cybermonitor" in absu:
+            continue
+        st, body = get(f"https://web.archive.org/web/{ts}im_/{absu}")
+        name = urllib.parse.unquote(absu.rsplit("/", 1)[-1], encoding="latin-1")
+        ok = st == 200 and len(body) > 100 and body[:15].lstrip()[:1] != b"<"
+        if ok:
+            with open(os.path.join(outdir, "assets", re.sub(r'[\\/:*?"<>|]', "_", name)), "wb") as f:
+                f.write(body)
+        out.append({"src": src, "url": absu, "status": st, "bytes": len(body), "file": ("assets/" + name) if ok else ""})
+        time.sleep(1)
+    return out
+
+
 # ---------------------------------------------------------------- run and report
 
 def log(msg: str) -> None:
@@ -422,6 +450,8 @@ def run(args) -> dict:
            "shared_digests": sorted(bad), "captures": uniq}
     if args.fetch:
         res["readable"] = fetch(uniq, args.fetch, args.out, bad)
+    if args.images:
+        res["images"] = [i for u in args.urls for i in page_images(u, args.images, args.out)]
     return res
 
 
@@ -435,7 +465,13 @@ def report(results: list[dict]) -> str:
         qy, caps = res["query"], res["captures"]
         line = " ".join(qy["urls"]) + (" (prefix)" if qy["prefix"] else "") + (f" name ~ {qy['name']}" if qy["name"] else "")
         out += [f"## {line}", ""]
+        if "images" in res:
+            got = [i for i in res["images"] if i["file"]]
+            out += [f"Images: {len(got)} saved of {len(res['images'])}.", ""]
+            out += [f"- `{i['src']}` — {i['file'] or 'HTTP ' + str(i['status'])}" for i in res["images"]] + [""]
         if not caps:
+            if "images" in res:
+                continue
             out += ["Zero captures.", ""]
             continue
         by = collections.defaultdict(list)
@@ -473,6 +509,7 @@ def parser() -> argparse.ArgumentParser:
     p.add_argument("--to", type=int)
     p.add_argument("--sources")
     p.add_argument("--fetch", type=int, default=0)
+    p.add_argument("--images", metavar="TIMESTAMP")
     p.add_argument("--out", default="out")
     p.add_argument("--queue")
     return p

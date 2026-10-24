@@ -127,5 +127,21 @@ class T(unittest.TestCase):
             self.assertIn("Cyliani", md)
 
 
+class Images(unittest.TestCase):
+    def test_page_images(self):
+        page = b'<html><body><img src="a.jpg"><img src="sub/b%E9.gif"><img src="http://stat3.cybermonitor.com/x"></body></html>'
+        def net(url, headers=None, timeout=90, tries=4):
+            if "id_/" in url:
+                return 200, page
+            return 200, b"\x89PNG" + b"0" * 200
+        C.get = net
+        C.time.sleep = lambda s: None
+        with tempfile.TemporaryDirectory() as d:
+            out = C.page_images("http://example.fr/site/p.html", "20100929163632", d)
+            self.assertEqual([i["file"] for i in out], ["assets/a.jpg", "assets/b\xe9.gif"])
+            self.assertTrue(os.path.exists(os.path.join(d, "assets", "a.jpg")))
+            self.assertIn("20100929163632im_/http://example.fr/site/sub/b%E9.gif", out[1]["url"].join(["https://web.archive.org/web/20100929163632im_/", ""]))
+
+
 if __name__ == "__main__":
     unittest.main()
