@@ -1,79 +1,326 @@
 # Captures — 2026-10-24
 
-## http://perso.club-internet.fr/hdelboy/ (prefix) name ~ ^(alchimie|alchimie_livres|article[ +_]complet[ +_]pour[ +_]l'astrologue|atalanta_vii|bourges|cyliani|divers|dp_ex_celebr|ebelmen|eclairci|gobineau|havel_2|histoire[ +_]des[ +_]directions[ +_]primaires|idee_alchimique_1|imitat_prec\.htmcarbon_potasse|index2|le[ +_]mercure[ +_]de[ +_]nature|legende_graal|loysel_txt_brut|ortho|page3|plan_delesse|prima_2|rech1|rinck_2|symb_9|symb_d\~1|talc|troitzky|troitzky_2|troitzky_3|troitzky_4|troitzky_5)\.html?$
+## http://herve.delboy.perso.sfr.fr/gobineau.html
 
-| archive | captures | addresses | first | last |
-|---|---|---|---|---|
-| wayback | 82 | 27 | 05/01/2000 | 08/12/2004 |
+Images: 56 saved of 56.
 
-| address | captures | with content (status 200, distinct digest) |
-|---|---|---|
-| `perso.club-internet.fr:80/hdelboy/HISTOIRE%20DES%20DIRECTIONS%20PRIMAIRES.html` | 1 | 0 |
-| `perso.club-internet.fr:80/hdelboy/alchimie.htm` | 2 | 0 |
-| `perso.club-internet.fr:80/hdelboy/alchimie_livres.html` | 8 | 0 |
-| `perso.club-internet.fr:80/hdelboy/article%20complet%20pour%20l'astrologue.html` | 3 | 0 |
-| `perso.club-internet.fr:80/hdelboy/article+complet+pour+l'astrologue.html` | 3 | 0 |
-| `perso.club-internet.fr:80/hdelboy/atalanta_vii.html` | 4 | 0 |
-| `perso.club-internet.fr:80/hdelboy/cyliani.htm` | 6 | 0 |
-| `perso.club-internet.fr:80/hdelboy/dp_ex_celebr.htm` | 1 | 0 |
-| `perso.club-internet.fr:80/hdelboy/ebelmen.html` | 2 | 0 |
-| `perso.club-internet.fr:80/hdelboy/eclairci.htm` | 1 | 0 |
-| `perso.club-internet.fr:80/hdelboy/gobineau.html` | 13 | 12 |
-| `perso.club-internet.fr:80/hdelboy/idee_alchimique_1.html` | 3 | 0 |
-| `perso.club-internet.fr:80/hdelboy/imitat_prec.htmcarbon_potasse.htm` | 5 | 0 |
-| `perso.club-internet.fr:80/hdelboy/index2.html` | 3 | 0 |
-| `perso.club-internet.fr:80/hdelboy/le%20mercure%20de%20nature.htm` | 1 | 0 |
-| `perso.club-internet.fr:80/hdelboy/le+mercure+de+nature.htm` | 2 | 0 |
-| `perso.club-internet.fr:80/hdelboy/legende_graal.html` | 6 | 0 |
-| `perso.club-internet.fr:80/hdelboy/loysel_txt_brut.html` | 1 | 0 |
-| `perso.club-internet.fr:80/hdelboy/ortho.htm` | 2 | 0 |
-| `perso.club-internet.fr:80/hdelboy/page3.htm` | 3 | 0 |
-| `perso.club-internet.fr:80/hdelboy/plan_delesse.html` | 2 | 0 |
-| `perso.club-internet.fr:80/hdelboy/prima_2.html` | 2 | 0 |
-| `perso.club-internet.fr:80/hdelboy/rech1.htm` | 1 | 0 |
-| `perso.club-internet.fr:80/hdelboy/symb_9.html` | 1 | 0 |
-| `perso.club-internet.fr:80/hdelboy/symb_d%7E1.htm` | 2 | 0 |
-| `perso.club-internet.fr:80/hdelboy/symb_d~1.htm` | 2 | 0 |
-| `perso.club-internet.fr:80/hdelboy/talc.html` | 2 | 0 |
+- `gobineau.jpg` — assets/gobineau.jpg
+- `WB01645_.gif` — assets/WB01645_.gif
+- `WB01649_.gif` — assets/WB01649_.gif
+- `notredame_facade.jpg` — assets/notredame_facade.jpg
+- `mat_prem.jpg` — assets/mat_prem.jpg
+- `portail_central.jpg` — assets/portail_central.jpg
+- `philosophie.jpg` — assets/philosophie.jpg
+- `job.jpg` — assets/job.jpg
+- `abraham.jpg` — assets/abraham.jpg
+- `cadmus.jpg` — assets/cadmus.jpg
+- `chevalier1.jpg` — assets/chevalier1.jpg
+- `rayons_soleil.jpg` — assets/rayons_soleil.jpg
+- `speculum_beauvais.jpg` — assets/speculum_beauvais.jpg
+- `grammaire.jpg` — assets/grammaire.jpg
+- `dialectique.jpg` — assets/dialectique.jpg
+- `rhetorique_chartres.jpg` — assets/rhetorique_chartres.jpg
+- `arithm%E9tique.jpg` — assets/arithmétique.jpg
+- `geometrie.jpg` — assets/geometrie.jpg
+- `astronomie.jpg` — assets/astronomie.jpg
+- `musique.jpg` — assets/musique.jpg
+- `prudence_nd.jpg` — assets/prudence_nd.jpg
+- `folie_nd.jpg` — assets/folie_nd.jpg
+- `foi.jpg` — assets/foi.jpg
+- `idolatrie_nd.jpg` — assets/idolatrie_nd.jpg
+- `charite_nd.jpg` — assets/charite_nd.jpg
+- `avarice_nd.jpg` — assets/avarice_nd.jpg
+- `patience_nd.jpg` — assets/patience_nd.jpg
+- `colere_nd.jpg` — assets/colere_nd.jpg
+- `perseverance.jpg` — assets/perseverance.jpg
+- `inconstance.jpg` — assets/inconstance.jpg
+- `chastete.jpg` — assets/chastete.jpg
+- `luxure.jpg` — assets/luxure.jpg
+- `concorde.jpg` — assets/concorde.jpg
+- `discorde.jpg` — assets/discorde.jpg
+- `force_nd.jpg` — assets/force_nd.jpg
+- `lachete.jpg` — assets/lachete.jpg
+- `esperance.jpg` — assets/esperance.jpg
+- `desespoir.jpg` — assets/desespoir.jpg
+- `humilite.jpg` — assets/humilite.jpg
+- `orgueil.jpg` — assets/orgueil.jpg
+- `obeissance.jpg` — assets/obeissance.jpg
+- `desobeissance.jpg` — assets/desobeissance.jpg
+- `fixe_volatil.jpg` — assets/fixe_volatil.jpg
+- `durete.jpg` — assets/durete.jpg
+- `bourges_portail.jpg` — assets/bourges_portail.jpg
+- `portail_moissac.jpg` — assets/portail_moissac.jpg
+- `chapiteau_daurade.jpg` — assets/chapiteau_daurade.jpg
+- `tympan_st_sernin.jpg` — assets/tympan_st_sernin.jpg
+- `sarcophage_st_hilaire.jpg` — assets/sarcophage_st_hilaire.jpg
+- `tympan_bertrand_comminges.jpg` — assets/tympan_bertrand_comminges.jpg
+- `st_martial_bible.jpg` — assets/st_martial_bible.jpg
+- `st_chaffre.jpg` — assets/st_chaffre.jpg
+- `deluge_gartempe.jpg` — assets/deluge_gartempe.jpg
+- `chasse_austremoine.jpg` — assets/chasse_austremoine.jpg
+- `vezelay.jpg` — assets/vezelay.jpg
+- `tympan_naud.jpg` — assets/tympan_naud.jpg
 
-Readable captures:
+## http://perso.club-internet.fr/hdelboy/alchimie.htm
 
-- `http://perso.club-internet.fr:80/hdelboy/gobineau.html` — esprit gobineau — 269686 characters — wayback, [12/10/2004](https://web.archive.org/web/20041012103917id_/http://perso.club-internet.fr:80/hdelboy/gobineau.html) — `pages/perso.club-internet.fr_80_hdelboy_gobineau.html_20041012103917.html`
+Zero captures.
 
-## http://herve.delboy.perso.sfr.fr/ (prefix) name ~ ^(alchimie|alchimie_livres|article[ +_]complet[ +_]pour[ +_]l'astrologue|atalanta_vii|bourges|cyliani|divers|dp_ex_celebr|ebelmen|eclairci|gobineau|havel_2|histoire[ +_]des[ +_]directions[ +_]primaires|idee_alchimique_1|imitat_prec\.htmcarbon_potasse|index2|le[ +_]mercure[ +_]de[ +_]nature|legende_graal|loysel_txt_brut|ortho|page3|plan_delesse|prima_2|rech1|rinck_2|symb_9|symb_d\~1|talc|troitzky|troitzky_2|troitzky_3|troitzky_4|troitzky_5)\.html?$
+## http://perso.club-internet.fr/hdelboy/alchimie_livres.html
 
-| archive | captures | addresses | first | last |
-|---|---|---|---|---|
-| commoncrawl | 75 | 3 | 17/05/2012 | 09/06/2023 |
-| wayback | 60 | 19 | 28/08/2009 | 08/08/2023 |
+Zero captures.
 
-| address | captures | with content (status 200, distinct digest) |
-|---|---|---|
-| `herve.delboy.perso.sfr.fr/bourges.htm` | 2 | 2 |
-| `herve.delboy.perso.sfr.fr/cyliani.htm` | 2 | 0 |
-| `herve.delboy.perso.sfr.fr/gobineau.html` | 46 | 3 |
-| `herve.delboy.perso.sfr.fr/page3.htm` | 1 | 0 |
-| `herve.delboy.perso.sfr.fr/troitzky.htm` | 1 | 0 |
-| `herve.delboy.perso.sfr.fr/troitzky_2.htm` | 37 | 2 |
-| `herve.delboy.perso.sfr.fr/troitzky_3.htm` | 1 | 1 |
-| `herve.delboy.perso.sfr.fr/troitzky_4.htm` | 1 | 1 |
-| `herve.delboy.perso.sfr.fr/troitzky_5.htm` | 1 | 1 |
-| `herve.delboy.perso.sfr.fr:80/bourges.htm` | 1 | 1 |
-| `herve.delboy.perso.sfr.fr:80/divers.htm` | 1 | 1 |
-| `herve.delboy.perso.sfr.fr:80/gobineau.html` | 25 | 2 |
-| `herve.delboy.perso.sfr.fr:80/havel_2.htm` | 1 | 1 |
-| `herve.delboy.perso.sfr.fr:80/rinck_2.htm` | 1 | 1 |
-| `herve.delboy.perso.sfr.fr:80/troitzky.htm` | 5 | 2 |
-| `herve.delboy.perso.sfr.fr:80/troitzky_2.htm` | 3 | 2 |
-| `herve.delboy.perso.sfr.fr:80/troitzky_3.htm` | 2 | 2 |
-| `herve.delboy.perso.sfr.fr:80/troitzky_4.htm` | 2 | 2 |
-| `herve.delboy.perso.sfr.fr:80/troitzky_5.htm` | 2 | 2 |
+## http://perso.club-internet.fr/hdelboy/article+complet+pour+l%27astrologue.html
 
-Readable captures:
+Zero captures.
 
-- `http://herve.delboy.perso.sfr.fr/gobineau.html` — esprit gobineau — 269686 characters — commoncrawl, [10/03/2014](https://data.commoncrawl.org/crawl-data/CC-MAIN-2014-10/segments/1394010749774/warc/CC-MAIN-20140305091229-00086-ip-10-183-142-35.ec2.internal.warc.gz) — `pages/herve.delboy.perso.sfr.fr_gobineau.html_20140310105858.html`
-- `http://herve.delboy.perso.sfr.fr:80/gobineau.html` — esprit gobineau — 269686 characters — wayback, [29/09/2010](https://web.archive.org/web/20100929163632id_/http://herve.delboy.perso.sfr.fr:80/gobineau.html) — `pages/herve.delboy.perso.sfr.fr_80_gobineau.html_20100929163632.html`
+## http://perso.club-internet.fr/hdelboy/atalanta_vii.html
 
-## http://herve.delboy.perso.sfr.fr/
+Zero captures.
+
+## http://perso.club-internet.fr/hdelboy/bourges.htm
+
+Zero captures.
+
+## http://perso.club-internet.fr/hdelboy/cyliani.htm
+
+Zero captures.
+
+## http://perso.club-internet.fr/hdelboy/divers.htm
+
+Zero captures.
+
+## http://perso.club-internet.fr/hdelboy/dp_ex_celebr.htm
+
+Zero captures.
+
+## http://perso.club-internet.fr/hdelboy/ebelmen.htm
+
+Zero captures.
+
+## http://perso.club-internet.fr/hdelboy/eclairci.htm
+
+Zero captures.
+
+## http://perso.club-internet.fr/hdelboy/havel_2.htm
+
+Zero captures.
+
+## http://perso.club-internet.fr/hdelboy/histoire+des+directions+primaires.html
+
+Zero captures.
+
+## http://perso.club-internet.fr/hdelboy/idee_alchimique_1.html
+
+Zero captures.
+
+## http://perso.club-internet.fr/hdelboy/imitat_prec.htmcarbon_potasse.htm
+
+Zero captures.
+
+## http://perso.club-internet.fr/hdelboy/index2.htm
+
+Zero captures.
+
+## http://perso.club-internet.fr/hdelboy/le%20mercure%20de%20nature.htm
+
+Zero captures.
+
+## http://perso.club-internet.fr/hdelboy/le+mercure+de+nature.htm
+
+Zero captures.
+
+## http://perso.club-internet.fr/hdelboy/legende_graal.html
+
+Zero captures.
+
+## http://perso.club-internet.fr/hdelboy/loysel_txt_brut.html
+
+Zero captures.
+
+## http://perso.club-internet.fr/hdelboy/ortho.htm
+
+Zero captures.
+
+## http://perso.club-internet.fr/hdelboy/page3.htm
+
+Zero captures.
+
+## http://perso.club-internet.fr/hdelboy/plan_delesse.htm
+
+Zero captures.
+
+## http://perso.club-internet.fr/hdelboy/prima_2.htm
+
+Zero captures.
+
+## http://perso.club-internet.fr/hdelboy/rech1.htm
+
+Zero captures.
+
+## http://perso.club-internet.fr/hdelboy/rinck_2.htm
+
+Zero captures.
+
+## http://perso.club-internet.fr/hdelboy/symb_9.html
+
+Zero captures.
+
+## http://perso.club-internet.fr/hdelboy/symb_d~1.htm
+
+Zero captures.
+
+## http://perso.club-internet.fr/hdelboy/talc.htm
+
+Zero captures.
+
+## http://perso.club-internet.fr/hdelboy/troitzky.htm
+
+Zero captures.
+
+## http://perso.club-internet.fr/hdelboy/troitzky_2.htm
+
+Zero captures.
+
+## http://perso.club-internet.fr/hdelboy/troitzky_3.htm
+
+Zero captures.
+
+## http://perso.club-internet.fr/hdelboy/troitzky_4.htm
+
+Zero captures.
+
+## http://perso.club-internet.fr/hdelboy/troitzky_5.htm
+
+Zero captures.
+
+## http://herve.delboy.perso.sfr.fr/alchimie.htm
+
+Zero captures.
+
+## http://herve.delboy.perso.sfr.fr/alchimie_livres.html
+
+Zero captures.
+
+## http://herve.delboy.perso.sfr.fr/article+complet+pour+l%27astrologue.html
+
+Zero captures.
+
+## http://herve.delboy.perso.sfr.fr/atalanta_vii.html
+
+Zero captures.
+
+## http://herve.delboy.perso.sfr.fr/bourges.htm
+
+Zero captures.
+
+## http://herve.delboy.perso.sfr.fr/cyliani.htm
+
+Zero captures.
+
+## http://herve.delboy.perso.sfr.fr/divers.htm
+
+Zero captures.
+
+## http://herve.delboy.perso.sfr.fr/dp_ex_celebr.htm
+
+Zero captures.
+
+## http://herve.delboy.perso.sfr.fr/ebelmen.htm
+
+Zero captures.
+
+## http://herve.delboy.perso.sfr.fr/eclairci.htm
+
+Zero captures.
+
+## http://herve.delboy.perso.sfr.fr/havel_2.htm
+
+Zero captures.
+
+## http://herve.delboy.perso.sfr.fr/histoire+des+directions+primaires.html
+
+Zero captures.
+
+## http://herve.delboy.perso.sfr.fr/idee_alchimique_1.html
+
+Zero captures.
+
+## http://herve.delboy.perso.sfr.fr/imitat_prec.htmcarbon_potasse.htm
+
+Zero captures.
+
+## http://herve.delboy.perso.sfr.fr/index2.htm
+
+Zero captures.
+
+## http://herve.delboy.perso.sfr.fr/le%20mercure%20de%20nature.htm
+
+Zero captures.
+
+## http://herve.delboy.perso.sfr.fr/le+mercure+de+nature.htm
+
+Zero captures.
+
+## http://herve.delboy.perso.sfr.fr/legende_graal.html
+
+Zero captures.
+
+## http://herve.delboy.perso.sfr.fr/loysel_txt_brut.html
+
+Zero captures.
+
+## http://herve.delboy.perso.sfr.fr/ortho.htm
+
+Zero captures.
+
+## http://herve.delboy.perso.sfr.fr/page3.htm
+
+Zero captures.
+
+## http://herve.delboy.perso.sfr.fr/plan_delesse.htm
+
+Zero captures.
+
+## http://herve.delboy.perso.sfr.fr/prima_2.htm
+
+Zero captures.
+
+## http://herve.delboy.perso.sfr.fr/rech1.htm
+
+Zero captures.
+
+## http://herve.delboy.perso.sfr.fr/rinck_2.htm
+
+Zero captures.
+
+## http://herve.delboy.perso.sfr.fr/symb_9.html
+
+Zero captures.
+
+## http://herve.delboy.perso.sfr.fr/symb_d~1.htm
+
+Zero captures.
+
+## http://herve.delboy.perso.sfr.fr/talc.htm
+
+Zero captures.
+
+## http://herve.delboy.perso.sfr.fr/troitzky.htm
+
+Zero captures.
+
+## http://herve.delboy.perso.sfr.fr/troitzky_2.htm
+
+Zero captures.
+
+## http://herve.delboy.perso.sfr.fr/troitzky_3.htm
+
+Zero captures.
+
+## http://herve.delboy.perso.sfr.fr/troitzky_4.htm
+
+Zero captures.
+
+## http://herve.delboy.perso.sfr.fr/troitzky_5.htm
 
 Zero captures.
