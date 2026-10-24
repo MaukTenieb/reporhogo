@@ -494,7 +494,13 @@ def main(argv=None) -> None:
         parser().print_help()
         return
     os.makedirs(a.out, exist_ok=True)
-    results = [run(j) for j in jobs]
+    results = []
+    for j in jobs:  # results written after each line: a run cut short keeps what it found
+        results.append(run(j))
+        with open(os.path.join(a.out, "results.json"), "w", encoding="utf-8") as f:
+            json.dump(results, f, ensure_ascii=False, indent=1)
+        with open(os.path.join(a.out, "results.md"), "w", encoding="utf-8") as f:
+            f.write(report(results))
     with open(os.path.join(a.out, "results.json"), "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=1)
     with open(os.path.join(a.out, "results.md"), "w", encoding="utf-8") as f:

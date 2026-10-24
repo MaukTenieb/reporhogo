@@ -16,8 +16,11 @@ jobs:
         run: python3 -m unittest test_captures
       - name: Search each line of queue.txt
         working-directory: captures
+        timeout-minutes: 320
+        continue-on-error: true
         run: python3 captures.py --queue queue.txt --out /tmp/out > /dev/null
       - name: Keep the results in the branch archives
+        if: always()
         run: |
           cd /tmp/out
           git init -q -b archives
