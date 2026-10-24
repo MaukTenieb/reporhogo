@@ -1,6 +1,6 @@
 # Reporhogo
 
-> Reporhogo searches forty-one code forges for a topic and lists the repositories it finds. It searches GitHub, GitLab, Codeberg, SourceHut, Gitee, Radicle and 35 other forges at once, from a single HTML page, through their public APIs and the Software Heritage archive. By Mauk Tenieb & Korhogo. Code under MIT, method under CC BY 4.0, Korhogo material reserved; credit Mauk Tenieb & Korhogo.
+> Reporhogo searches forty-one code forges for a topic and lists the repositories it finds. It searches GitHub, GitLab, Codeberg, SourceHut, Gitee, Radicle and 35 other forges at once, from a single HTML page, through their public APIs and the Software Heritage archive. Its tool Captures (captures/captures.py) lists every capture of a web address or a whole site in eight web archives (Wayback Machine, Arquivo.pt, Common Crawl, archive.today, Library of Congress, UK Web Archive, Memento Time Travel, Ghost Archive) and downloads the readable ones. By Mauk Tenieb & Korhogo. Code under MIT, method under CC BY 4.0, Korhogo material reserved; credit Mauk Tenieb & Korhogo.
 
 ## Links
 - [mauktenieb.github.io, the index of Mauk Tenieb's sites](https://mauktenieb.github.io/)

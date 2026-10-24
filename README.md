@@ -2,7 +2,7 @@
 
 By Mauk Tenieb & Korhogo. Build guide: [MaukTenieb/method](https://github.com/MaukTenieb/method).
 
-Reporhogo searches forty-one code forges for a topic and lists the repositories it finds. Type a word. Reporhogo searches GitHub, GitLab, Codeberg, SourceHut, Gitee, Radicle and 35 other forges at once, and lists the repositories in one place.
+Reporhogo searches forty-one code forges for a topic and lists the repositories it finds. Its tool Captures searches eight web archives for a lost page. Type a word. Reporhogo searches GitHub, GitLab, Codeberg, SourceHut, Gitee, Radicle and 35 other forges at once, and lists the repositories in one place.
 
 Online: https://mauktenieb.github.io/reporhogo/
 
@@ -22,6 +22,35 @@ Codeberg · Forgejo · Gitea · SourceHut · GitLab · Bitbucket · Gerrit · Ph
 ## Search from a file
 
 Write topics in `queue.txt`, one per line, and push it to `main`. GitHub Actions then runs Reporhogo in a real browser on each topic and writes the results to the branch `result`. `results.md` lists, per topic, the forges that answered and the matching repositories, sorted by stars; `results.json` gives the same data as JSON.
+
+## Web archives
+
+`captures/captures.py` lists every capture of a web address, or of a whole site, in eight public web archives, then downloads the captures that hold a readable page.
+
+| id | archive | reach |
+|---|---|---|
+| `wayback` | Internet Archive, Wayback Machine | address or whole site, year by year |
+| `arquivo` | Arquivo.pt | address or whole site, year by year |
+| `commoncrawl` | Common Crawl, every crawl since 2008 | address or whole site, crawl by crawl |
+| `archivetoday` | archive.today (archive.ph) | address |
+| `loc` | Library of Congress | address |
+| `ukwa` | UK Web Archive | address |
+| `memento` | Memento Time Travel: national and university archives in one query | address |
+| `ghost` | Ghost Archive | address |
+
+- Every capture counts: the indexes run with `collapse` off, page by page (`resumeKey`), one year or one crawl at a time.
+- An old host often answers a dead page with its error page and the code 200, and the archives keep that error page as a valid capture. One digest under three addresses or more marks it; the download skips it.
+- `--prefix` lists every address ever captured under a site, including file names absent from any link; `--name` keeps the file names that match a pattern.
+- One address goes out under its spellings: `http` and `https`, bare host and `www`, `.htm` and `.html`, lower case, spaces as `%20`, `+` and `_`, other hosts of the same site (`--alias`).
+- `--fetch N` downloads up to N captures with distinct content per address and keeps the first readable page. Common Crawl pages come out of their WARC file by byte range.
+
+```bash
+cd captures
+python3 captures.py http://example.fr/page.htm --alias www2.example.fr --fetch 5
+python3 captures.py http://example.fr/ --prefix --name "^(page|other)\.html?$" --from 2001 --to 2012 --fetch 5
+```
+
+Python 3.9 or later, standard library only. From a file: one search per line in `captures/queue.txt`; in the tab Actions, "Search the web archives", then "Run workflow". The results go to the branch `archives`: `results.md`, `results.json`, `pages/`. archive.today shows a CAPTCHA to scripts; Captures then gives its address for a browser. Tests: `python3 -m unittest test_captures`, offline.
 
 ## Limits
 

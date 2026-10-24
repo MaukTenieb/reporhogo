@@ -1,0 +1,29 @@
+# Run by hand (Actions, "Search the web archives", "Run workflow"): captures/captures.py on every line of
+# captures/queue.txt, then results.md, results.json and the readable pages in the branch "archives".
+name: Search the web archives
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  archives:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - name: Tests
+        working-directory: captures
+        run: python3 -m unittest test_captures
+      - name: Search each line of queue.txt
+        working-directory: captures
+        run: python3 captures.py --queue queue.txt --out /tmp/out > /dev/null
+      - name: Keep the results in the branch archives
+        run: |
+          cd /tmp/out
+          git init -q -b archives
+          git config user.name "reporhogo"; git config user.email "actions@users.noreply.github.com"
+          git remote add origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          git fetch -q origin archives && git reset -q --soft origin/archives || true
+          git add -A
+          git commit -qm "Captures $(date -u +%FT%H%M)" || exit 0
+          git push -q origin HEAD:archives
