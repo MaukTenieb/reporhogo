@@ -14,7 +14,7 @@
    "out": "/tmp/out",
    "queue": null
   },
-  "date": "2026-10-24T18:11:43+00:00",
+  "date": "2026-10-24T18:12:32+00:00",
   "shared_digests": [
    "2IRBUHIWWSLKDJKB4PSIBHFI46P7B7V4",
    "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ",
@@ -280,636 +280,6 @@
     "digest": "KFUPKG4QELFHU5QX5LFE6XNOV7L3VMQI",
     "length": 356,
     "replay": "https://web.archive.org/web/20011006151229id_/http://perso.club-internet.fr:80/hdelboy/le+mercure+de+nature.htm"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/alchimie.htm",
-    "ts": "20021106055338",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6958,
-    "replay": "https://web.archive.org/web/20021106055338id_/http://perso.club-internet.fr:80/hdelboy/alchimie.htm"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/alchimie.htm",
-    "ts": "20021218174032",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6960,
-    "replay": "https://web.archive.org/web/20021218174032id_/http://perso.club-internet.fr:80/hdelboy/alchimie.htm"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/alchimie_livres.html",
-    "ts": "20020213194314",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6963,
-    "replay": "https://web.archive.org/web/20020213194314id_/http://perso.club-internet.fr:80/hdelboy/alchimie_livres.html"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/alchimie_livres.html",
-    "ts": "20021202205441",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6964,
-    "replay": "https://web.archive.org/web/20021202205441id_/http://perso.club-internet.fr:80/hdelboy/alchimie_livres.html"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/article+complet+pour+l'astrologue.html",
-    "ts": "20020210040859",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6975,
-    "replay": "https://web.archive.org/web/20020210040859id_/http://perso.club-internet.fr:80/hdelboy/article+complet+pour+l'astrologue.html"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/article+complet+pour+l'astrologue.html",
-    "ts": "20020409063623",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6974,
-    "replay": "https://web.archive.org/web/20020409063623id_/http://perso.club-internet.fr:80/hdelboy/article+complet+pour+l'astrologue.html"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/article+complet+pour+l'astrologue.html",
-    "ts": "20020601172153",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6975,
-    "replay": "https://web.archive.org/web/20020601172153id_/http://perso.club-internet.fr:80/hdelboy/article+complet+pour+l'astrologue.html"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/article+complet+pour+l'astrologue.html",
-    "ts": "20021001143203",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6974,
-    "replay": "https://web.archive.org/web/20021001143203id_/http://perso.club-internet.fr:80/hdelboy/article+complet+pour+l'astrologue.html"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/atalanta_vii.html",
-    "ts": "20020107002305",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "KFUPKG4QELFHU5QX5LFE6XNOV7L3VMQI",
-    "length": 349,
-    "replay": "https://web.archive.org/web/20020107002305id_/http://perso.club-internet.fr:80/hdelboy/atalanta_vii.html"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/atalanta_vii.html",
-    "ts": "20020218035327",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6961,
-    "replay": "https://web.archive.org/web/20020218035327id_/http://perso.club-internet.fr:80/hdelboy/atalanta_vii.html"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/atalanta_vii.html",
-    "ts": "20020419003953",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6960,
-    "replay": "https://web.archive.org/web/20020419003953id_/http://perso.club-internet.fr:80/hdelboy/atalanta_vii.html"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/atalanta_vii.html",
-    "ts": "20020612131945",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6962,
-    "replay": "https://web.archive.org/web/20020612131945id_/http://perso.club-internet.fr:80/hdelboy/atalanta_vii.html"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/atalanta_vii.html",
-    "ts": "20021001175143",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6960,
-    "replay": "https://web.archive.org/web/20021001175143id_/http://perso.club-internet.fr:80/hdelboy/atalanta_vii.html"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/atalanta_vii.html",
-    "ts": "20021202111530",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6960,
-    "replay": "https://web.archive.org/web/20021202111530id_/http://perso.club-internet.fr:80/hdelboy/atalanta_vii.html"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/cyliani.htm",
-    "ts": "20020804201109",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6958,
-    "replay": "https://web.archive.org/web/20020804201109id_/http://perso.club-internet.fr:80/hdelboy/cyliani.htm"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/cyliani.htm",
-    "ts": "20021001175303",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6957,
-    "replay": "https://web.archive.org/web/20021001175303id_/http://perso.club-internet.fr:80/hdelboy/cyliani.htm"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/cyliani.htm",
-    "ts": "20021202112938",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6958,
-    "replay": "https://web.archive.org/web/20021202112938id_/http://perso.club-internet.fr:80/hdelboy/cyliani.htm"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/dp_ex_celebr.htm",
-    "ts": "20021202112208",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6961,
-    "replay": "https://web.archive.org/web/20021202112208id_/http://perso.club-internet.fr:80/hdelboy/dp_ex_celebr.htm"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/ebelmen.html",
-    "ts": "20021001165518",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6957,
-    "replay": "https://web.archive.org/web/20021001165518id_/http://perso.club-internet.fr:80/hdelboy/ebelmen.html"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/ebelmen.html",
-    "ts": "20021214061334",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6959,
-    "replay": "https://web.archive.org/web/20021214061334id_/http://perso.club-internet.fr:80/hdelboy/ebelmen.html"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/eclairci.htm",
-    "ts": "20020612210958",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6959,
-    "replay": "https://web.archive.org/web/20020612210958id_/http://perso.club-internet.fr:80/hdelboy/eclairci.htm"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/eclairci.htm",
-    "ts": "20021214062723",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6959,
-    "replay": "https://web.archive.org/web/20021214062723id_/http://perso.club-internet.fr:80/hdelboy/eclairci.htm"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/gobineau.html",
-    "ts": "20020611054159",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "BPFBC6GUXOYPEMZII3445NDAACAWDHOX",
-    "length": 23775,
-    "replay": "https://web.archive.org/web/20020611054159id_/http://perso.club-internet.fr:80/hdelboy/gobineau.html"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/gobineau.html",
-    "ts": "20020804144720",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "BPFBC6GUXOYPEMZII3445NDAACAWDHOX",
-    "length": 23771,
-    "replay": "https://web.archive.org/web/20020804144720id_/http://perso.club-internet.fr:80/hdelboy/gobineau.html"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/gobineau.html",
-    "ts": "20021013203713",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "W5RQPDKE5VLOCCQK5TAM2OFBN3AMK57M",
-    "length": 121447,
-    "replay": "https://web.archive.org/web/20021013203713id_/http://perso.club-internet.fr:80/hdelboy/gobineau.html"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/HISTOIRE+DES+DIRECTIONS+PRIMAIRES.html",
-    "ts": "20021001172049",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6981,
-    "replay": "https://web.archive.org/web/20021001172049id_/http://perso.club-internet.fr:80/hdelboy/HISTOIRE+DES+DIRECTIONS+PRIMAIRES.html"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/idee_alchimique_1.html",
-    "ts": "20020213050023",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6963,
-    "replay": "https://web.archive.org/web/20020213050023id_/http://perso.club-internet.fr:80/hdelboy/idee_alchimique_1.html"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/idee_alchimique_1.html",
-    "ts": "20020611080352",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6965,
-    "replay": "https://web.archive.org/web/20020611080352id_/http://perso.club-internet.fr:80/hdelboy/idee_alchimique_1.html"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/idee_alchimique_1.html",
-    "ts": "20020804205144",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6963,
-    "replay": "https://web.archive.org/web/20020804205144id_/http://perso.club-internet.fr:80/hdelboy/idee_alchimique_1.html"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/idee_alchimique_1.html",
-    "ts": "20021202145520",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6964,
-    "replay": "https://web.archive.org/web/20021202145520id_/http://perso.club-internet.fr:80/hdelboy/idee_alchimique_1.html"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/imitat_prec.htmcarbon_potasse.htm",
-    "ts": "20021202150406",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6975,
-    "replay": "https://web.archive.org/web/20021202150406id_/http://perso.club-internet.fr:80/hdelboy/imitat_prec.htmcarbon_potasse.htm"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/index2.html",
-    "ts": "20020612130319",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6958,
-    "replay": "https://web.archive.org/web/20020612130319id_/http://perso.club-internet.fr:80/hdelboy/index2.html"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/index2.html",
-    "ts": "20020808115245",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6956,
-    "replay": "https://web.archive.org/web/20020808115245id_/http://perso.club-internet.fr:80/hdelboy/index2.html"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/index2.html",
-    "ts": "20021001175534",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6955,
-    "replay": "https://web.archive.org/web/20021001175534id_/http://perso.club-internet.fr:80/hdelboy/index2.html"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/index2.html",
-    "ts": "20021214093123",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6957,
-    "replay": "https://web.archive.org/web/20021214093123id_/http://perso.club-internet.fr:80/hdelboy/index2.html"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/le%20mercure%20de%20nature.htm",
-    "ts": "20021202151430",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6968,
-    "replay": "https://web.archive.org/web/20021202151430id_/http://perso.club-internet.fr:80/hdelboy/le%20mercure%20de%20nature.htm"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/le+mercure+de+nature.htm",
-    "ts": "20020213205041",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6967,
-    "replay": "https://web.archive.org/web/20020213205041id_/http://perso.club-internet.fr:80/hdelboy/le+mercure+de+nature.htm"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/le+mercure+de+nature.htm",
-    "ts": "20020621123123",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6967,
-    "replay": "https://web.archive.org/web/20020621123123id_/http://perso.club-internet.fr:80/hdelboy/le+mercure+de+nature.htm"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/le+mercure+de+nature.htm",
-    "ts": "20020804210307",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6968,
-    "replay": "https://web.archive.org/web/20020804210307id_/http://perso.club-internet.fr:80/hdelboy/le+mercure+de+nature.htm"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/le+mercure+de+nature.htm",
-    "ts": "20021001212820",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6969,
-    "replay": "https://web.archive.org/web/20021001212820id_/http://perso.club-internet.fr:80/hdelboy/le+mercure+de+nature.htm"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/legende_graal.html",
-    "ts": "20021001212839",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6963,
-    "replay": "https://web.archive.org/web/20021001212839id_/http://perso.club-internet.fr:80/hdelboy/legende_graal.html"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/loysel_txt_brut.html",
-    "ts": "20020612212304",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6965,
-    "replay": "https://web.archive.org/web/20020612212304id_/http://perso.club-internet.fr:80/hdelboy/loysel_txt_brut.html"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/loysel_txt_brut.html",
-    "ts": "20020804210550",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6965,
-    "replay": "https://web.archive.org/web/20020804210550id_/http://perso.club-internet.fr:80/hdelboy/loysel_txt_brut.html"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/ortho.htm",
-    "ts": "20020804211353",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6957,
-    "replay": "https://web.archive.org/web/20020804211353id_/http://perso.club-internet.fr:80/hdelboy/ortho.htm"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/ortho.htm",
-    "ts": "20021001174336",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6956,
-    "replay": "https://web.archive.org/web/20021001174336id_/http://perso.club-internet.fr:80/hdelboy/ortho.htm"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/ortho.htm",
-    "ts": "20021202113127",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6956,
-    "replay": "https://web.archive.org/web/20021202113127id_/http://perso.club-internet.fr:80/hdelboy/ortho.htm"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/page3.htm",
-    "ts": "20020225003238",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6957,
-    "replay": "https://web.archive.org/web/20020225003238id_/http://perso.club-internet.fr:80/hdelboy/page3.htm"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/plan_delesse.html",
-    "ts": "20020612204842",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6960,
-    "replay": "https://web.archive.org/web/20020612204842id_/http://perso.club-internet.fr:80/hdelboy/plan_delesse.html"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/plan_delesse.html",
-    "ts": "20021001213602",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6958,
-    "replay": "https://web.archive.org/web/20021001213602id_/http://perso.club-internet.fr:80/hdelboy/plan_delesse.html"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/plan_delesse.html",
-    "ts": "20021214062754",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6958,
-    "replay": "https://web.archive.org/web/20021214062754id_/http://perso.club-internet.fr:80/hdelboy/plan_delesse.html"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/prima_2.html",
-    "ts": "20021001163739",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6958,
-    "replay": "https://web.archive.org/web/20021001163739id_/http://perso.club-internet.fr:80/hdelboy/prima_2.html"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/prima_2.html",
-    "ts": "20021214063529",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6959,
-    "replay": "https://web.archive.org/web/20021214063529id_/http://perso.club-internet.fr:80/hdelboy/prima_2.html"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/rech1.htm",
-    "ts": "20021106092550",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6958,
-    "replay": "https://web.archive.org/web/20021106092550id_/http://perso.club-internet.fr:80/hdelboy/rech1.htm"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/symb_9.html",
-    "ts": "20020804213600",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6957,
-    "replay": "https://web.archive.org/web/20020804213600id_/http://perso.club-internet.fr:80/hdelboy/symb_9.html"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/symb_9.html",
-    "ts": "20021001170330",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6957,
-    "replay": "https://web.archive.org/web/20021001170330id_/http://perso.club-internet.fr:80/hdelboy/symb_9.html"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/symb_9.html",
-    "ts": "20021214102844",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6959,
-    "replay": "https://web.archive.org/web/20021214102844id_/http://perso.club-internet.fr:80/hdelboy/symb_9.html"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/symb_d~1.htm",
-    "ts": "20020417072451",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6961,
-    "replay": "https://web.archive.org/web/20020417072451id_/http://perso.club-internet.fr:80/hdelboy/symb_d~1.htm"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/symb_d~1.htm",
-    "ts": "20020602000017",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6959,
-    "replay": "https://web.archive.org/web/20020602000017id_/http://perso.club-internet.fr:80/hdelboy/symb_d~1.htm"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/symb_d~1.htm",
-    "ts": "20020805073025",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6960,
-    "replay": "https://web.archive.org/web/20020805073025id_/http://perso.club-internet.fr:80/hdelboy/symb_d~1.htm"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/symb_d~1.htm",
-    "ts": "20021001171029",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6962,
-    "replay": "https://web.archive.org/web/20021001171029id_/http://perso.club-internet.fr:80/hdelboy/symb_d~1.htm"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/symb_d~1.htm",
-    "ts": "20021202230205",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6961,
-    "replay": "https://web.archive.org/web/20021202230205id_/http://perso.club-internet.fr:80/hdelboy/symb_d~1.htm"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/talc.html",
-    "ts": "20021001171750",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6954,
-    "replay": "https://web.archive.org/web/20021001171750id_/http://perso.club-internet.fr:80/hdelboy/talc.html"
-   },
-   {
-    "source": "wayback",
-    "url": "http://perso.club-internet.fr:80/hdelboy/talc.html",
-    "ts": "20021214102906",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "VMMOAJXL3JXFQCYGQ3LDLZJTLSOEY3X6",
-    "length": 6957,
-    "replay": "https://web.archive.org/web/20021214102906id_/http://perso.club-internet.fr:80/hdelboy/talc.html"
    },
    {
     "source": "wayback",
@@ -1574,10 +944,11 @@
    "out": "/tmp/out",
    "queue": null
   },
-  "date": "2026-10-24T19:37:02+00:00",
+  "date": "2026-10-24T19:44:30+00:00",
   "shared_digests": [
    "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ",
    "EFDXLE5OVD5CTXG7MAXLVNEIAIZ2ON43",
+   "EYFFWEUOEEULJNDPRR5753WDYFDLAO7R",
    "FBYCZ4OBLJCWFQZLYRLGSVTHSCTREV2F",
    "FFTZHNGCLJ5I2LSPTA7GNOTBLFIN7M2R",
    "FMWVHY5E35LEDXNVNMVSXKTW7KQKFX6A",
@@ -1586,10 +957,39 @@
    "KAU675CNO7ZTORZXPB577DGTCBPJK2PP",
    "V6HUNK43LGPTPBT2E3BI3UH4BDCC4XMJ",
    "VGLFMPSORWD3C6OV242EVL5STQ7R5NZP",
-   "VXEDWGPHSNERWHDOUD6YWRWNT4ZOLEX4",
    "XU66NWN5ZODN5E5SK7XCQMCCX2CAWRY2"
   ],
   "captures": [
+   {
+    "source": "wayback",
+    "url": "http://herve.delboy.perso.sfr.fr:80/gobineau.html",
+    "ts": "20090828093745",
+    "status": "200",
+    "mime": "text/html",
+    "digest": "BFHIY6NYPN3X6KGVQWNTBNXTGD7Y4VA7",
+    "length": 121266,
+    "replay": "https://web.archive.org/web/20090828093745id_/http://herve.delboy.perso.sfr.fr:80/gobineau.html"
+   },
+   {
+    "source": "wayback",
+    "url": "http://herve.delboy.perso.sfr.fr:80/gobineau.html",
+    "ts": "20091028135519",
+    "status": "200",
+    "mime": "text/html",
+    "digest": "BFHIY6NYPN3X6KGVQWNTBNXTGD7Y4VA7",
+    "length": 121266,
+    "replay": "https://web.archive.org/web/20091028135519id_/http://herve.delboy.perso.sfr.fr:80/gobineau.html"
+   },
+   {
+    "source": "wayback",
+    "url": "http://herve.delboy.perso.sfr.fr:80/gobineau.html",
+    "ts": "20091228005150",
+    "status": "200",
+    "mime": "text/html",
+    "digest": "BFHIY6NYPN3X6KGVQWNTBNXTGD7Y4VA7",
+    "length": 121265,
+    "replay": "https://web.archive.org/web/20091228005150id_/http://herve.delboy.perso.sfr.fr:80/gobineau.html"
+   },
    {
     "source": "wayback",
     "url": "http://herve.delboy.perso.sfr.fr:80/bourges.htm",
@@ -2123,16 +1523,6 @@
    {
     "source": "wayback",
     "url": "http://herve.delboy.perso.sfr.fr:80/gobineau.html",
-    "ts": "20191102070921",
-    "status": "301",
-    "mime": "text/plain",
-    "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ",
-    "length": 229,
-    "replay": "https://web.archive.org/web/20191102070921id_/http://herve.delboy.perso.sfr.fr:80/gobineau.html"
-   },
-   {
-    "source": "wayback",
-    "url": "http://herve.delboy.perso.sfr.fr:80/gobineau.html",
     "ts": "20200105170909",
     "status": "301",
     "mime": "text/plain",
@@ -2209,6 +1599,16 @@
     "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ",
     "length": 504,
     "replay": "cc:crawl-data/CC-MAIN-2017-34/segments/1502886105187.53/crawldiagnostics/CC-MAIN-20170818213959-20170818233959-00226.warc.gz:2151878:504"
+   },
+   {
+    "source": "commoncrawl",
+    "url": "http://herve.delboy.perso.sfr.fr/troitzky_2.htm",
+    "ts": "20170722165616",
+    "status": "301",
+    "mime": "unk",
+    "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ",
+    "length": 509,
+    "replay": "cc:crawl-data/CC-MAIN-2017-30/segments/1500549424088.27/crawldiagnostics/CC-MAIN-20170722162708-20170722182708-00319.warc.gz:9663917:509"
    },
    {
     "source": "commoncrawl",
@@ -2449,6 +1849,26 @@
     "digest": "NPSJPU36ZFZ2CEWTHFMBCSVKNDSVH7M5",
     "length": 992,
     "replay": "cc:crawl-data/CC-MAIN-2016-07/segments/1454701146302.25/warc/CC-MAIN-20160205193906-00054-ip-10-236-182-209.ec2.internal.warc.gz:101778116:992"
+   },
+   {
+    "source": "commoncrawl",
+    "url": "http://herve.delboy.perso.sfr.fr/gobineau.html",
+    "ts": "20151129103057",
+    "status": "200",
+    "mime": "text/html",
+    "digest": "6V3LKP4QO2JJSN3VOKKKFWEZETQNXCLF",
+    "length": 117928,
+    "replay": "cc:crawl-data/CC-MAIN-2015-48/segments/1448398457697.46/warc/CC-MAIN-20151124205417-00202-ip-10-71-132-137.ec2.internal.warc.gz:106431180:117928"
+   },
+   {
+    "source": "commoncrawl",
+    "url": "http://herve.delboy.perso.sfr.fr/troitzky_2.htm",
+    "ts": "20151127095946",
+    "status": "200",
+    "mime": "text/html",
+    "digest": "NPSJPU36ZFZ2CEWTHFMBCSVKNDSVH7M5",
+    "length": 1002,
+    "replay": "cc:crawl-data/CC-MAIN-2015-48/segments/1448398448506.69/warc/CC-MAIN-20151124205408-00100-ip-10-71-132-137.ec2.internal.warc.gz:107980522:1002"
    },
    {
     "source": "commoncrawl",
@@ -2783,6 +2203,36 @@
    {
     "source": "commoncrawl",
     "url": "http://herve.delboy.perso.sfr.fr/gobineau.html",
+    "ts": "20140729023412",
+    "status": "200",
+    "mime": "text/html",
+    "digest": "YF2RPNV2HDXPTZJZBK3HEJJWVBBRZEDH",
+    "length": 117811,
+    "replay": "cc:crawl-data/CC-MAIN-2014-23/segments/1406510264575.30/warc/CC-MAIN-20140728011744-00244-ip-10-146-231-18.ec2.internal.warc.gz:136785914:117811"
+   },
+   {
+    "source": "commoncrawl",
+    "url": "http://herve.delboy.perso.sfr.fr/troitzky_2.htm",
+    "ts": "20140725151932",
+    "status": "200",
+    "mime": "text/html",
+    "digest": "KN2C3UDMKBVORZJRKYTCUEC3MD7ISRKH",
+    "length": 732,
+    "replay": "cc:crawl-data/CC-MAIN-2014-23/segments/1405997894289.49/warc/CC-MAIN-20140722025814-00247-ip-10-33-131-23.ec2.internal.warc.gz:138106083:732"
+   },
+   {
+    "source": "commoncrawl",
+    "url": "http://herve.delboy.perso.sfr.fr/troitzky_2.htm",
+    "ts": "20140731233906",
+    "status": "200",
+    "mime": "text/html",
+    "digest": "KN2C3UDMKBVORZJRKYTCUEC3MD7ISRKH",
+    "length": 732,
+    "replay": "cc:crawl-data/CC-MAIN-2014-23/segments/1406510273766.32/warc/CC-MAIN-20140728011753-00009-ip-10-146-231-18.ec2.internal.warc.gz:135167875:732"
+   },
+   {
+    "source": "commoncrawl",
+    "url": "http://herve.delboy.perso.sfr.fr/gobineau.html",
     "ts": "20140418155428",
     "status": "200",
     "mime": "text/html",
@@ -2829,26 +2279,6 @@
     "digest": "KN2C3UDMKBVORZJRKYTCUEC3MD7ISRKH",
     "length": 734,
     "replay": "cc:crawl-data/CC-MAIN-2014-10/segments/1394021872753/warc/CC-MAIN-20140305121752-00019-ip-10-183-142-35.ec2.internal.warc.gz:86806385:734"
-   },
-   {
-    "source": "commoncrawl",
-    "url": "http://herve.delboy.perso.sfr.fr/gobineau.html",
-    "ts": "20131209222704",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "BFHIY6NYPN3X6KGVQWNTBNXTGD7Y4VA7",
-    "length": 121591,
-    "replay": "cc:crawl-data/CC-MAIN-2013-48/segments/1386164000853/warc/CC-MAIN-20131204133320-00086-ip-10-33-133-15.ec2.internal.warc.gz:82882309:121591"
-   },
-   {
-    "source": "commoncrawl",
-    "url": "http://herve.delboy.perso.sfr.fr/troitzky_2.htm",
-    "ts": "20131212023839",
-    "status": "200",
-    "mime": "text/html",
-    "digest": "KN2C3UDMKBVORZJRKYTCUEC3MD7ISRKH",
-    "length": 735,
-    "replay": "cc:crawl-data/CC-MAIN-2013-48/segments/1386164351837/warc/CC-MAIN-20131204133911-00019-ip-10-33-133-15.ec2.internal.warc.gz:82655029:735"
    },
    {
     "source": "commoncrawl",
@@ -2927,7 +2357,7 @@
    "out": "/tmp/out",
    "queue": null
   },
-  "date": "2026-10-24T19:46:37+00:00",
+  "date": "2026-10-24T19:58:19+00:00",
   "shared_digests": [],
   "captures": []
  }

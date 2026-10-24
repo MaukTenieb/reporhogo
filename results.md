@@ -4,38 +4,37 @@
 
 | archive | captures | addresses | first | last |
 |---|---|---|---|---|
-| wayback | 145 | 28 | 05/01/2000 | 08/12/2004 |
+| wayback | 82 | 27 | 05/01/2000 | 08/12/2004 |
 
 | address | captures | with content (status 200, distinct digest) |
 |---|---|---|
 | `perso.club-internet.fr:80/hdelboy/HISTOIRE%20DES%20DIRECTIONS%20PRIMAIRES.html` | 1 | 0 |
-| `perso.club-internet.fr:80/hdelboy/HISTOIRE+DES+DIRECTIONS+PRIMAIRES.html` | 1 | 0 |
-| `perso.club-internet.fr:80/hdelboy/alchimie.htm` | 4 | 0 |
-| `perso.club-internet.fr:80/hdelboy/alchimie_livres.html` | 10 | 0 |
+| `perso.club-internet.fr:80/hdelboy/alchimie.htm` | 2 | 0 |
+| `perso.club-internet.fr:80/hdelboy/alchimie_livres.html` | 8 | 0 |
 | `perso.club-internet.fr:80/hdelboy/article%20complet%20pour%20l'astrologue.html` | 3 | 0 |
-| `perso.club-internet.fr:80/hdelboy/article+complet+pour+l'astrologue.html` | 7 | 0 |
-| `perso.club-internet.fr:80/hdelboy/atalanta_vii.html` | 10 | 0 |
-| `perso.club-internet.fr:80/hdelboy/cyliani.htm` | 9 | 0 |
-| `perso.club-internet.fr:80/hdelboy/dp_ex_celebr.htm` | 2 | 0 |
-| `perso.club-internet.fr:80/hdelboy/ebelmen.html` | 4 | 0 |
-| `perso.club-internet.fr:80/hdelboy/eclairci.htm` | 3 | 0 |
-| `perso.club-internet.fr:80/hdelboy/gobineau.html` | 16 | 13 |
-| `perso.club-internet.fr:80/hdelboy/idee_alchimique_1.html` | 7 | 0 |
-| `perso.club-internet.fr:80/hdelboy/imitat_prec.htmcarbon_potasse.htm` | 6 | 0 |
-| `perso.club-internet.fr:80/hdelboy/index2.html` | 7 | 0 |
-| `perso.club-internet.fr:80/hdelboy/le%20mercure%20de%20nature.htm` | 2 | 0 |
-| `perso.club-internet.fr:80/hdelboy/le+mercure+de+nature.htm` | 6 | 0 |
-| `perso.club-internet.fr:80/hdelboy/legende_graal.html` | 7 | 0 |
-| `perso.club-internet.fr:80/hdelboy/loysel_txt_brut.html` | 3 | 0 |
-| `perso.club-internet.fr:80/hdelboy/ortho.htm` | 5 | 0 |
-| `perso.club-internet.fr:80/hdelboy/page3.htm` | 4 | 0 |
-| `perso.club-internet.fr:80/hdelboy/plan_delesse.html` | 5 | 0 |
-| `perso.club-internet.fr:80/hdelboy/prima_2.html` | 4 | 0 |
-| `perso.club-internet.fr:80/hdelboy/rech1.htm` | 2 | 0 |
-| `perso.club-internet.fr:80/hdelboy/symb_9.html` | 4 | 0 |
+| `perso.club-internet.fr:80/hdelboy/article+complet+pour+l'astrologue.html` | 3 | 0 |
+| `perso.club-internet.fr:80/hdelboy/atalanta_vii.html` | 4 | 0 |
+| `perso.club-internet.fr:80/hdelboy/cyliani.htm` | 6 | 0 |
+| `perso.club-internet.fr:80/hdelboy/dp_ex_celebr.htm` | 1 | 0 |
+| `perso.club-internet.fr:80/hdelboy/ebelmen.html` | 2 | 0 |
+| `perso.club-internet.fr:80/hdelboy/eclairci.htm` | 1 | 0 |
+| `perso.club-internet.fr:80/hdelboy/gobineau.html` | 13 | 12 |
+| `perso.club-internet.fr:80/hdelboy/idee_alchimique_1.html` | 3 | 0 |
+| `perso.club-internet.fr:80/hdelboy/imitat_prec.htmcarbon_potasse.htm` | 5 | 0 |
+| `perso.club-internet.fr:80/hdelboy/index2.html` | 3 | 0 |
+| `perso.club-internet.fr:80/hdelboy/le%20mercure%20de%20nature.htm` | 1 | 0 |
+| `perso.club-internet.fr:80/hdelboy/le+mercure+de+nature.htm` | 2 | 0 |
+| `perso.club-internet.fr:80/hdelboy/legende_graal.html` | 6 | 0 |
+| `perso.club-internet.fr:80/hdelboy/loysel_txt_brut.html` | 1 | 0 |
+| `perso.club-internet.fr:80/hdelboy/ortho.htm` | 2 | 0 |
+| `perso.club-internet.fr:80/hdelboy/page3.htm` | 3 | 0 |
+| `perso.club-internet.fr:80/hdelboy/plan_delesse.html` | 2 | 0 |
+| `perso.club-internet.fr:80/hdelboy/prima_2.html` | 2 | 0 |
+| `perso.club-internet.fr:80/hdelboy/rech1.htm` | 1 | 0 |
+| `perso.club-internet.fr:80/hdelboy/symb_9.html` | 1 | 0 |
 | `perso.club-internet.fr:80/hdelboy/symb_d%7E1.htm` | 2 | 0 |
-| `perso.club-internet.fr:80/hdelboy/symb_d~1.htm` | 7 | 0 |
-| `perso.club-internet.fr:80/hdelboy/talc.html` | 4 | 0 |
+| `perso.club-internet.fr:80/hdelboy/symb_d~1.htm` | 2 | 0 |
+| `perso.club-internet.fr:80/hdelboy/talc.html` | 2 | 0 |
 
 Readable captures:
 
@@ -45,23 +44,23 @@ Readable captures:
 
 | archive | captures | addresses | first | last |
 |---|---|---|---|---|
-| commoncrawl | 71 | 3 | 17/05/2012 | 09/06/2023 |
-| wayback | 58 | 19 | 16/02/2010 | 08/08/2023 |
+| commoncrawl | 75 | 3 | 17/05/2012 | 09/06/2023 |
+| wayback | 60 | 19 | 28/08/2009 | 08/08/2023 |
 
 | address | captures | with content (status 200, distinct digest) |
 |---|---|---|
 | `herve.delboy.perso.sfr.fr/bourges.htm` | 2 | 2 |
 | `herve.delboy.perso.sfr.fr/cyliani.htm` | 2 | 0 |
-| `herve.delboy.perso.sfr.fr/gobineau.html` | 45 | 3 |
+| `herve.delboy.perso.sfr.fr/gobineau.html` | 46 | 3 |
 | `herve.delboy.perso.sfr.fr/page3.htm` | 1 | 0 |
 | `herve.delboy.perso.sfr.fr/troitzky.htm` | 1 | 0 |
-| `herve.delboy.perso.sfr.fr/troitzky_2.htm` | 34 | 2 |
+| `herve.delboy.perso.sfr.fr/troitzky_2.htm` | 37 | 2 |
 | `herve.delboy.perso.sfr.fr/troitzky_3.htm` | 1 | 1 |
 | `herve.delboy.perso.sfr.fr/troitzky_4.htm` | 1 | 1 |
 | `herve.delboy.perso.sfr.fr/troitzky_5.htm` | 1 | 1 |
 | `herve.delboy.perso.sfr.fr:80/bourges.htm` | 1 | 1 |
 | `herve.delboy.perso.sfr.fr:80/divers.htm` | 1 | 1 |
-| `herve.delboy.perso.sfr.fr:80/gobineau.html` | 23 | 2 |
+| `herve.delboy.perso.sfr.fr:80/gobineau.html` | 25 | 2 |
 | `herve.delboy.perso.sfr.fr:80/havel_2.htm` | 1 | 1 |
 | `herve.delboy.perso.sfr.fr:80/rinck_2.htm` | 1 | 1 |
 | `herve.delboy.perso.sfr.fr:80/troitzky.htm` | 5 | 2 |
